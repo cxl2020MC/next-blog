@@ -62,5 +62,5 @@ nav .nav-btns .nav-btn {
 }
 
 nav .nav-btns .nav-btn:hover {
-    color: var(--text-color-hover);
+    background: var(--btn-hover-bg);
 }
