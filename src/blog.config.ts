@@ -7,6 +7,8 @@ const blogConfig = {
         avatar: 'https://cxl2020mc-1304820025.file.myqcloud.com/avatar.svg',
         favicon: 'https://cxl2020mc-1304820025.file.myqcloud.com/avatar.svg',
         author: '陈鑫磊',
+        // description: '一个热爱编程的少年',
+        bio: '一个热爱编程的少年',
         github: 'https://github.com/Jin-JinJin',
     },
     repo: 'https://github.com/Jin-JinJin/blog',

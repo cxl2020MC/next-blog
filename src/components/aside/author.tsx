@@ -11,7 +11,7 @@ export default function Author(){
             </div>
             <div className="author__info">
                 <h3 className="author__name">Luis Fernando</h3>
-                <p className="author__bio">I'm a software developer, I like to learn new things and share my knowledge with others.</p>
+                <p className="author__bio">{blogConfig.author.bio}</p>
             </div>
             <div className="author__social">
                 <Link href="https://github.com/luisfernando-1" target="_blank" rel="noreferrer">
