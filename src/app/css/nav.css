@@ -7,6 +7,7 @@ nav {
     left: 0;
     background: var(--blur-bg);
     backdrop-filter: var(--blur-fulter);
+    z-index: 114514;
 }
 
 #site-name {
@@ -23,7 +24,7 @@ nav .nav-links {
     margin: 0.5em;
 }
 
-@media (max-width: 30em) {
+@media (max-width: 40em) {
     nav .nav-links {
         display: none;
     }

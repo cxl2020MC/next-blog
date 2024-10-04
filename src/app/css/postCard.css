@@ -51,7 +51,7 @@
         /* height: 15em; */
     }
     .post-list .post-card .post-card__content {
-        width: 100%;
+        width: auto;
     }
 }
 
