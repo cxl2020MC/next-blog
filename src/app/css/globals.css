@@ -1,0 +1,125 @@
+/* @font-face {
+    font-family: "Source Han Sans CN";
+    src: url("https://cxl2020mc-1304820025.file.myqcloud.com/fonts/Source_Han_Sans/SourceHanSansCN-VF.ttf.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Source Han Sans CN", sans-serif;
+} */
+
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --card-border: 1px solid var(--theme-color-gay);
+    --card-border-hover: 1px solid var(--theme-color);
+    --input-border: 1px solid var(--theme-color-gay);
+    --bottom-border-readius: 0.5em;
+    --card-border-radius: 1em;
+    --blur-filter: blur(10px);
+}
+
+[data-theme="light"] {
+    --bg-color: #fffbf0;
+    --card-bg: #fff;
+    --blur-bg: rgba(255 255 255/0.8);
+
+    --text-color: #333;
+    --text-color-secondary: #666;
+    --text-color-light: #fff;
+
+    --theme-color: var(--theme-color-blue);
+    --theme-color-red: #ef6f48;
+    --theme-color-green: #7ba23f;
+    --theme-color-blue: #1677b3;
+    --theme-color-yellow: #d19826;
+    --theme-color-gay: #e4e4e4;
+
+    --theme-color-dark: var(--theme-color-blue-dark);
+    --theme-color-red-dark: #b54434;
+    --theme-color-green-dark: #579572;
+    --theme-color-blue-dark: #6699a1;
+    --theme-color-yellow-dark: #ddc871;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --card-bg: #222;
+    --blur-bg: rgba(50 50 50/0.8);
+
+    --text-color: #fff;
+    --text-color-secondary: #aaa;
+    --text-color-light: #666;
+
+    --theme-color: var(--theme-color-blue);
+    --theme-color-red: #ef6f48;
+    --theme-color-green: #7ba23f;
+    --theme-color-blue: #1677b3;
+    --theme-color-yellow: #d19826;
+    --theme-color-gay: #666;
+
+    --theme-color-dark: var(--theme-color-blue-dark);
+    --theme-color-red-dark: #b54434;
+    --theme-color-green-dark: #579572;
+    --theme-color-blue-dark: #6699a1;
+    --theme-color-yellow-dark: #ddc871;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.5;
+    /* -webkit-tap-highlight-color: transparent */
+}
+
+body {
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    height: 0.5em;
+    border-radius: 999em;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(50 50 50 / 0.2);
+}
+
+a {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+
+.card {
+    background-color: var(--card-bg);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius);
+    margin: 1em;
+    padding: 1em;
+    transition: border 0.3s ease-in-out;
+}
+
+.card:hover {
+    border: var(--card-border-hover);
+}

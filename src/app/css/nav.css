@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: var(--blur-bg);
+    backdrop-filter: var(--blur-fulter);
+}
+
+#site-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0.5rem;
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
+}
+
+nav .nav-links .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav .nav-links a:hover {
+    color: var(--text-color-hover);
+}
+
