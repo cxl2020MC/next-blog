@@ -13,9 +13,9 @@ export default function Author(){
                 <p className="author__bio">I'm a software developer, I like to learn new things and share my knowledge with others.</p>
             </div>
             <div className="author__social">
-                <a href="https://github.com/luisfernando-1" target="_blank" rel="noreferrer">
+                <Link href="https://github.com/luisfernando-1" target="_blank" rel="noreferrer">
                     <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="github" />
-                </a>
+                </Link>
             </div>
         </div>
     )
