@@ -1,5 +1,10 @@
 // import Image from 'next/image'
+import PostList from "@/components/postList"
+
+
 
 export default function Home() {
-  return <p>陈鑫磊的博客</p>
+  return (
+    <PostList />
+  )
 }

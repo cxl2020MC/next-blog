@@ -1,5 +1,6 @@
 
 const blogConfig = {
+    api: 'https://api.blog.cxl2020mc.top',
     title: '陈鑫磊的博客',
     description: '',
     logo: 'https://avatars.githubusercontent.com/u/79699052?v=4',
