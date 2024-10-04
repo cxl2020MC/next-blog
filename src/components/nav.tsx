@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Icon } from '@iconify/react'
 import blogConfig from '@/blog.config'
 import "@/app/css/nav.css"
+import NavThemeToggleBtn from './themeToggleBtn'
 
 export default function Nav() {
   return (
@@ -11,8 +12,9 @@ export default function Nav() {
         <NavLinks />
       </div>
       <div className="nav-btns">
-        <NavMenuBtns icon="fa6-brands:github" />
-        <NavMenuBtns icon="fa6-solid:bars" />
+        <NavThemeToggleBtn />
+        <NavMenuBtn icon="fa6-brands:github" />
+        <NavMenuBtn icon="fa6-solid:bars" />
       </div>
     </nav>
   )
@@ -30,10 +32,11 @@ function NavLinks() {
 }
 
 
-function NavMenuBtns({ icon }: { icon: string }) {
+function NavMenuBtn({ icon }: { icon: string, onClick?: () => void }) {
   return (
-    <div className="nav-menu-btn">
+    <button className="nav-btn">
       <Icon icon={icon}></Icon>
-    </div>
+    </button>
   )
 }
+
