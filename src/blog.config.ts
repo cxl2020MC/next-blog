@@ -1,7 +1,5 @@
 
-
-
-export default {
+const blogConfig = {
     title: '陈鑫磊的博客',
     description: '',
     logo: 'https://avatars.githubusercontent.com/u/79699052?v=4',
@@ -32,3 +30,5 @@ export default {
         },
     ]
 }
+
+export default blogConfig
