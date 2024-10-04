@@ -1,10 +1,6 @@
 // import Image from 'next/image'
-import PostList from "@/components/postList"
-
-
+import PostList from "@/components/postList";
 
 export default function Home() {
-  return (
-    <PostList />
-  )
+    return <PostList />;
 }
