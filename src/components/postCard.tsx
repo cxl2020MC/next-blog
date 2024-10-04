@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Icon } from "@iconify/react"
 import type { Article } from "@/types/article"
+import { formatUnix } from "@/utils/formatDate"
 import "@/app/css/postCard.css"
 
 
@@ -17,16 +18,16 @@ export default function PostCard({ Article }: { Article: Article }) {
                 <Link href={`/posts/${Article.link}`}>
                     <h3 className="post-card__title">{Article.title}</h3>
                 </Link>
-                <p>{Article.description}</p>
+                <p className="post-card__description">{Article.description}</p>
                 <div className="post-card__infos">
-                <span className="post-card__info">
+                    <span className="post-card__info">
                         <Icon icon="fa6-solid:calendar"></Icon>
-                        创建于: {Article.created_at}
+                        创建于: {formatUnix(Article.created_at)}
                     </span>
                     <span>|</span>
                     <span className="post-card__info">
                         <Icon icon="fa6-solid:clock"></Icon>
-                        更新于: {Article.updated_at}
+                        更新于: {formatUnix(Article.updated_at)}
                     </span>
                 </div>
             </div>

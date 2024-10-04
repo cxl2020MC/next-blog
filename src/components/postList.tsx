@@ -6,7 +6,7 @@ import type { Article } from "@/types/article"
 export default async function PostList() {
     async function getPostList() {
         // 'use server'
-        const req = await fetch(`${blogConfig.api}/posts`)
+        const req = await fetch(`${blogConfig.api}/posts`, { next: { revalidate: 30 } })
         const res = await req.json()
         console.log(res)
         return res.data
