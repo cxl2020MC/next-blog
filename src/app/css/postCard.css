@@ -42,7 +42,7 @@
     color: var(--text-color-secondary);
 }
 
-@media (max-width: 40em) {
+@media (max-width: 50em) {
     .post-list .post-card {
         flex-direction: column;
     }
