@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Icon } from '@iconify/react'
 import blogConfig from "@/blog.config"
 
 export default function Author(){
@@ -14,7 +15,8 @@ export default function Author(){
             </div>
             <div className="author__social">
                 <Link href="https://github.com/luisfernando-1" target="_blank" rel="noreferrer">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="github" />
+                    {/* <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="github" /> */}
+                    <Icon icon="fa6-brands:github"></Icon>
                 </Link>
             </div>
         </div>
