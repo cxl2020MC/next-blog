@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import "./css/globals.css"
 import Nav from "@/components/nav"
-import Aside from "@/components/aside"
+import Aside from "@/components/aside/aside"
 
 export const metadata: Metadata = {
   title: "陈鑫磊的博客",
