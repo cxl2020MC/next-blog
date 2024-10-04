@@ -8,17 +8,18 @@ export default function Nav() {
     <nav className="nav">
       <Link id="site-name" href="/">陈鑫磊的博客</Link>
       <div className="nav-links">
-         <NavLinks></NavLinks>
+        <NavLinks />
       </div>
-      <div className="nav-menu-btn">
-
+      <div className="nav-btns">
+        <NavMenuBtns icon="fa6-brands:github" />
+        <NavMenuBtns icon="fa6-solid:bars" />
       </div>
     </nav>
   )
 }
 
 function NavLinks() {
-  return blogConfig.nav.map((item) => {
+  return blogConfig.nav.links.map((item) => {
     return (
       <Link key={item.name} href={item.link} className="nav-link">
         <Icon icon={item.icon}></Icon>
@@ -26,4 +27,13 @@ function NavLinks() {
       </Link>
     )
   })
+}
+
+
+function NavMenuBtns({ icon }: { icon: string }) {
+  return (
+    <div className="nav-menu-btn">
+      <Icon icon={icon}></Icon>
+    </div>
+  )
 }

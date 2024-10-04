@@ -7,28 +7,30 @@ const blogConfig = {
     author: '陈鑫磊',
     github: 'https://github.com/Jin-JinJin',
     repo: 'https://github.com/Jin-JinJin/blog',
-    nav: [
-        {
-            name: '友链',
-            icon: 'fa6-solid:link',
-            link: '/links'
-        },
-        {
-            name: '关于',
-            icon: 'fa6-solid:address-card',
-            link: '/about'
-        },
-        {
-            name: '归档',
-            icon: 'fa6-solid:box',
-            link: '/archives'
-        },
-        {
-            name: '分类',
-            icon: 'fa6-solid:folder-open',
-            link: '/categories'
-        },
-    ]
+    nav: {
+        links: [
+            {
+                name: '友链',
+                icon: 'fa6-solid:link',
+                link: '/links'
+            },
+            {
+                name: '关于',
+                icon: 'fa6-solid:address-card',
+                link: '/about'
+            },
+            {
+                name: '归档',
+                icon: 'fa6-solid:box',
+                link: '/archives'
+            },
+            {
+                name: '标签',
+                icon: 'fa6-solid:tags',
+                link: '/tags'
+            },
+        ]
+    }
 }
 
 export default blogConfig
