@@ -1,10 +1,12 @@
 aside {
-
+    margin: 1em;
 }
 
 aside .author {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
 }
 
 aside .author .author__avatar {
@@ -13,5 +15,8 @@ aside .author .author__avatar {
     height: 10em;
 }
 
-aside .author h3 {
+aside .author .author__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

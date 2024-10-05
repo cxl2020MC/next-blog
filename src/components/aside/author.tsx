@@ -10,7 +10,7 @@ export default function Author(){
                 <Image src={blogConfig.author.avatar} alt="avatar" fill={true} />
             </div>
             <div className="author__info">
-                <h3 className="author__name">Luis Fernando</h3>
+                <h3 className="author__name">{blogConfig.author.name}</h3>
                 <p className="author__bio">{blogConfig.author.bio}</p>
             </div>
             <div className="author__social">
