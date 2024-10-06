@@ -2,7 +2,7 @@
 // import Link from "next/link";
 import { notFound } from "next/navigation";
 import blogConfig from "@/blog.config";
-import renderMarkdown from "@/utils/renderMarkfdown";
+import renderMarkdown from "@/utils/renderMarkdown";
 import "@/app/css/posts.css"
 
 
