@@ -14,6 +14,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
     notFound();
   }
   const md_conent = post.data.md_content;
+  console.log(md_content)
   const md_html = await renderMarkdown(md_conent);
 
   console.log(md_html)
