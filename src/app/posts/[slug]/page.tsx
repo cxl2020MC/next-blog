@@ -1,7 +1,6 @@
 // import Img from "next/image";
 // import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MDXRemote } from 'next-mdx-remote/rsc'
 import blogConfig from "@/blog.config";
 import "@/app/css/posts.css"
 
@@ -18,7 +17,9 @@ export default async function PostPage({ params }: { params: { slug: string } })
 
   return (
     <div className="posts card">
-      <MDXRemote source={md_conent} />
+      {
+        md_conent
+      }
     </div>
   )
 }
