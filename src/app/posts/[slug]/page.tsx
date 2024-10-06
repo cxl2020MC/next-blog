@@ -16,6 +16,8 @@ export default async function PostPage({ params }: { params: { slug: string } })
   const md_conent = post.data.md_content;
   const md_html = await renderMarkdown(md_conent);
 
+  console.log(md_html)
+
   return (
     <div className="posts card" dangerouslySetInnerHTML={{
       __html: md_html
