@@ -20,9 +20,12 @@ export default function RootLayout({
                 <ThemeProvider>
                     {/* 导航栏 */}
                     <Nav />
-                    {children}
-                    {/* 侧边栏 */}
-                    <Aside />
+                    <div className="main">
+                        {/* 内容 */}
+                        {children}
+                        {/* 侧边栏 */}
+                        <Aside />
+                    </div>
                 </ThemeProvider>
             </body>
         </html>

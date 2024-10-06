@@ -1,13 +1,12 @@
 .post-list {
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em;
 }
 
 .post-list .post-card {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    margin: 1em;
     padding: 0;
     overflow: hidden;
 }

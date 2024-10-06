@@ -125,3 +125,16 @@ a {
 .card:hover {
     border: var(--card-border-hover);
 }
+
+.main {
+    /* padding: 1em; */
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* gap: 1em; */
+}
+
+@media (max-width: 50em) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}

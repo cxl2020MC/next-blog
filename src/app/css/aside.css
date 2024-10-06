@@ -1,5 +1,7 @@
 aside {
     margin: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 aside .author {
