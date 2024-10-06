@@ -7,10 +7,7 @@ import rehypeShiki from '@shikijs/rehype'
 
 import { unified } from 'unified'
 
-
-
-export default async function renderMarkdown(markdown: string) {
-    const processor = unified()
+const processor = unified()
     .use(remarkParse)
     .use(remarkGfm)
     // .use(remarkMath)
@@ -25,6 +22,7 @@ export default async function renderMarkdown(markdown: string) {
     })
     .use(rehypeStringify)
 
+export default async function renderMarkdown(markdown: string) {
     const file = await processor.process(markdown)
     return String(file)
 }
