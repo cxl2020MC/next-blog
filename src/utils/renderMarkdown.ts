@@ -12,12 +12,12 @@ const processor = unified()
     .use(remarkGfm)
     // .use(remarkMath)
     .use(remarkRehype)
-    .use(rehypeShiki, {
-        themes: {
-            light: 'catppuccin-latte',
-            dark: 'catppuccin-mocha'
-        },        
-    })
+    // .use(rehypeShiki, {
+        // themes: {
+            // light: 'catppuccin-latte',
+            // dark: 'catppuccin-mocha'
+        // },        
+    // })
     .use(rehypeStringify)
 
 export default async function renderMarkdown(markdown: string) {
