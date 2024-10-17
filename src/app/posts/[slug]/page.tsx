@@ -7,7 +7,7 @@ import "@/app/css/posts.css"
 
 
 export default async function PostPage({ params }: { params: { slug: string } }) {
-  const res = await fetch(`${blogConfig.api}/posts/${params.slug}`);
+  const res = await fetch(`${blogConfig.api}/posts/${params.slug}`, { next: { revalidate: 30 } });
   const post = await res.json();
   console.log(post)
   if (!post.data) {
