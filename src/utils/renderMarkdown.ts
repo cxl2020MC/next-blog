@@ -11,7 +11,7 @@ const processor = unified()
     .use(remarkParse)
     .use(remarkGfm)
     // .use(remarkMath)
-    .use(remarkRehype)
+    .use(remarkRehype, {allowDangerousHtml: true})
     .use(rehypeShiki, {
         themes: {
             // light: 'catppuccin-latte',
