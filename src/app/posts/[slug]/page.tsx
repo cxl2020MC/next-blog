@@ -7,14 +7,17 @@ import "@/app/css/posts.css"
 
 
 export default async function PostPage({ params }: { params: { slug: string } }) {
-  const res = await fetch(`${blogConfig.api}/posts/${params.slug}`);
+  const res = await fetch(`${blogConfig.api}/posts/${params.slug}`, { next: { revalidate: 30 } });
   const post = await res.json();
   console.log(post)
   if (!post.data) {
     notFound();
   }
-  const md_conent = post.data.md_content;
-  const md_html = await renderMarkdown(md_conent);
+  const md_content = post.data.md_content;
+  console.log(md_content)
+  const md_html = await renderMarkdown(md_content);
+
+  console.log(md_html)
 
   return (
     <div className="posts card" dangerouslySetInnerHTML={{

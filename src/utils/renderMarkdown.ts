@@ -7,24 +7,22 @@ import rehypeShiki from '@shikijs/rehype'
 
 import { unified } from 'unified'
 
-
-
-export default async function renderMarkdown(markdown: string) {
-    const processor = unified()
+const processor = unified()
     .use(remarkParse)
     .use(remarkGfm)
     // .use(remarkMath)
-    .use(remarkRehype)
+    .use(remarkRehype, {allowDangerousHtml: true})
     .use(rehypeShiki, {
         themes: {
-            light: 'catppuccin-latte',
-            dark: 'catppuccin-mocha'
-        },
-        inLine: "tailing-curly-colon",
-        
+            // light: 'catppuccin-latte',
+            // dark: 'catppuccin-mocha',
+            light: 'vitesse-light',
+            dark: 'vitesse-dark',
+        },        
     })
     .use(rehypeStringify)
 
+export default async function renderMarkdown(markdown: string) {
     const file = await processor.process(markdown)
     return String(file)
 }
