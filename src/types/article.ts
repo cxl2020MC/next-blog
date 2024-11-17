@@ -11,4 +11,5 @@ export interface Article {
     // author: string,
     created_at: number,
     updated_at: number,
+    word_count: number,
 }

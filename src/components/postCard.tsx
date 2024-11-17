@@ -29,6 +29,11 @@ export default function PostCard({ Article }: { Article: Article }) {
                         <Icon icon="fa6-solid:clock"></Icon>
                         更新于: {formatUnix(Article.updated_at)}
                     </span>
+                    <span>|</span>
+                    <span className="post-card__info">
+                        <Icon icon="fa6-solid:file-word"/>
+                        字数: {Article.word_count}
+                    </span>
                 </div>
             </div>
         </div>
