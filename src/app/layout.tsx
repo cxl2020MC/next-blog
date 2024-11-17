@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
 import "./css/globals.css";
 import Nav from "@/components/nav";
 import Aside from "@/components/aside/aside";
@@ -17,16 +16,14 @@ export default function RootLayout({
     return (
         <html lang="zh-CN" data-theme="light">
             <body>
-                <ThemeProvider>
-                    {/* 导航栏 */}
-                    <Nav />
-                    <div className="main">
-                        {/* 内容 */}
-                        {children}
-                        {/* 侧边栏 */}
-                        <Aside />
-                    </div>
-                </ThemeProvider>
+                {/* 导航栏 */}
+                <Nav />
+                <div className="main">
+                    {/* 内容 */}
+                    {children}
+                    {/* 侧边栏 */}
+                    <Aside />
+                </div>
             </body>
         </html>
     );
