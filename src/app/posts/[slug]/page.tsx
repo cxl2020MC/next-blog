@@ -6,7 +6,8 @@ import renderMarkdown from "@/utils/renderMarkdown";
 import "@/app/css/posts.css"
 
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
+export default async function PostPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const res = await fetch(`${blogConfig.api}/posts/${params.slug}`, { next: { revalidate: 30 } });
   const post = await res.json();
   console.log(post)
