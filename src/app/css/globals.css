@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: "Source Han Sans CN";
     src: url("https://cxl2020mc-1304820025.file.myqcloud.com/fonts/Source_Han_Sans/SourceHanSansCN-VF.ttf.woff2") format('woff2');
     font-weight: normal;
@@ -8,10 +8,6 @@
 
 body {
     font-family: "Source Han Sans CN", sans-serif;
-} */
-
-body {
-    font-family: 'Microsoft YaHei', sans-serif;
 }
 
 html,
@@ -31,7 +27,13 @@ body {
     --blur-filter: blur(10px);
 }
 
-[data-theme="light"] {
+:root {
+    color-scheme: light dark;
+}
+
+/* [data-theme="light"] */
+/* 默认亮色 */
+:root {
     --bg-color: #f3f3f3;
     --card-bg: #fff;
     --btn-hover-bg: rgba(50 50 50 / 0.2);
@@ -55,28 +57,32 @@ body {
     --theme-color-yellow-dark: #ddc871;
 }
 
-[data-theme="dark"] {
-    --bg-color: #121212;
-    --card-bg: #222;
-    --btn-hover-bg: rgba(50 50 50 / 0.8);
-    --blur-bg: rgba(50 50 50/0.8);
+/* [data-theme="dark"] */
+/* 暗黑模式 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --card-bg: #222;
+        --btn-hover-bg: rgba(50 50 50 / 0.8);
+        --blur-bg: rgba(50 50 50/0.8);
 
-    --text-color: #fff;
-    --text-color-secondary: #aaa;
-    --text-color-light: #666;
+        --text-color: #fff;
+        --text-color-secondary: #aaa;
+        --text-color-light: #666;
 
-    --theme-color: var(--theme-color-blue);
-    --theme-color-red: #ef6f48;
-    --theme-color-green: #7ba23f;
-    --theme-color-blue: #1677b3;
-    --theme-color-yellow: #d19826;
-    --theme-color-gay: #666;
+        --theme-color: var(--theme-color-blue);
+        --theme-color-red: #ef6f48;
+        --theme-color-green: #7ba23f;
+        --theme-color-blue: #1677b3;
+        --theme-color-yellow: #d19826;
+        --theme-color-gay: #666;
 
-    --theme-color-dark: var(--theme-color-blue-dark);
-    --theme-color-red-dark: #b54434;
-    --theme-color-green-dark: #579572;
-    --theme-color-blue-dark: #6699a1;
-    --theme-color-yellow-dark: #ddc871;
+        --theme-color-dark: var(--theme-color-blue-dark);
+        --theme-color-red-dark: #b54434;
+        --theme-color-green-dark: #579572;
+        --theme-color-blue-dark: #6699a1;
+        --theme-color-yellow-dark: #ddc871;
+    }
 }
 
 body {
