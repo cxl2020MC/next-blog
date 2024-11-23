@@ -133,14 +133,14 @@ a {
 }
 
 .main {
-    /* padding: 1em; */
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    /* gap: 1em; */
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
 }
 
 @media (max-width: 50em) {
     .main {
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse
     }
 }
