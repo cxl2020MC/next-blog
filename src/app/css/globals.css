@@ -135,7 +135,6 @@ a {
 .main {
     display: flex;
     gap: 0.5em;
-    padding: 0.5em;
 }
 
 @media (max-width: 50em) {
