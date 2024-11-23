@@ -136,10 +136,15 @@ a {
     display: flex;
     gap: 1em;
     margin: 1em;
+
 }
 
 @media (max-width: 50em) {
     .main {
         flex-direction: column;
     }
+}
+
+.main-content {
+    flex: 1 1 auto;
 }

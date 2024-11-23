@@ -2,6 +2,7 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    flex: 0 1 15em;
 }
 
 aside .author {
@@ -13,8 +14,8 @@ aside .author {
 
 aside .author .author__avatar {
     position: relative;
-    width: 7em;
-    height: 7em;
+    width: 5em;
+    height: 5em;
 }
 
 aside .author .author__info {

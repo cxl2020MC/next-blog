@@ -19,12 +19,15 @@ export default function RootLayout({
             <body>
                 {/* 导航栏 */}
                 <Nav />
-                <main className="main">
-                    {/* 内容 */}
-                    {children}
+                <div className="main">
+                    <main className="main-content">
+                        {/* 内容 */}
+                        {children}
+                    </main>
+
                     {/* 侧边栏 */}
                     <Aside />
-                </main>
+                </div>
                 {/* 页脚 */}
                 <Footer />
             </body>
