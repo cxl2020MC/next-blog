@@ -9,7 +9,10 @@ const nextConfig = {
                 hostname: 'cxl2020mc-1304820025.file.myqcloud.com',
             }
         ]
-    }
+    },
+    sassOptions: {
+
+    },
 };
 
 
