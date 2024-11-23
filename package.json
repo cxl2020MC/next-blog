@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@iconify/react": "^5.0.2",
-    "@shikijs/rehype": "^1.22.2",
+    "@shikijs/rehype": "^1.23.1",
     "dayjs": "^1.11.13",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
@@ -23,12 +23,13 @@
     "unified": "^11.0.5"
   },
   "devDependencies": {
-    "@types/node": "^20.17.5",
+    "@types/node": "^20.17.7",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "eslint": "^8.57.1",
     "eslint-config-next": "15.0.3",
-    "typescript": "^5.6.3"
+    "sass": "^1.81.0",
+    "typescript": "^5.7.2"
   },
   "pnpm": {
     "overrides": {
