@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./css/globals.scss";
+import "./css/globals.css";
 import Nav from "@/components/nav";
 import Aside from "@/components/aside/aside";
 
