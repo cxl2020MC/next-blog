@@ -1,7 +1,7 @@
-// import Img from "next/image";
-// import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import blogConfig from "@/blog.config";
+
 import "@/app/css/posts.css";
 import "@/app/css/markdown.css";
 
