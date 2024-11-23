@@ -3,7 +3,8 @@
 import { notFound } from "next/navigation";
 import blogConfig from "@/blog.config";
 import renderMarkdown from "@/utils/renderMarkdown";
-import "@/app/css/posts.css"
+import "@/app/css/posts.css";
+import "@/app/css/markdown.css";
 
 
 export default async function PostPage(props: { params: Promise<{ slug: string }> }) {

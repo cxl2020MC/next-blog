@@ -8,7 +8,7 @@ const blogConfig = {
         favicon: 'https://cxl2020mc-1304820025.file.myqcloud.com/avatar.svg',
         name: '陈鑫磊',
         // description: '一个热爱编程的少年',
-        bio: '一个热爱编程的少年',
+        bio: '当你有机会做出选择的时候，不要让自己后悔。',
         github: 'https://github.com/Jin-JinJin',
     },
     repo: 'https://github.com/Jin-JinJin/blog',

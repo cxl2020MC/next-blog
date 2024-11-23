@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./css/globals.css";
 import Nav from "@/components/nav";
 import Aside from "@/components/aside/aside";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
     title: "陈鑫磊的博客",
@@ -18,12 +19,14 @@ export default function RootLayout({
             <body>
                 {/* 导航栏 */}
                 <Nav />
-                <div className="main">
+                <main className="main">
                     {/* 内容 */}
                     {children}
                     {/* 侧边栏 */}
                     <Aside />
-                </div>
+                </main>
+                {/* 页脚 */}
+                <Footer />
             </body>
         </html>
     );
