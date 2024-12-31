@@ -20,7 +20,7 @@ export default function RootLayout({
     return (
         <html lang="zh-CN" data-theme="light">
             <body>
-                <NextTopLoader height={99999} />
+                <NextTopLoader z-/>
                 {/* 导航栏 */}
                 <Nav />
                 <div className="main">

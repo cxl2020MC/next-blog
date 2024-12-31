@@ -7,7 +7,7 @@ nav {
     left: 0;
     background: var(--blur-bg);
     backdrop-filter: var(--blur-filter);
-    z-index: 114514;
+    z-index: 1000;
 }
 
 #site-name {
