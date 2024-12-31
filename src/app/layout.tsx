@@ -4,6 +4,7 @@ import Nav from "@/components/nav";
 import Aside from "@/components/aside/aside";
 import Footer from "@/components/footer";
 
+import NextTopLoader from 'nextjs-toploader';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
     return (
         <html lang="zh-CN" data-theme="light">
             <body>
+                <NextTopLoader />
                 {/* 导航栏 */}
                 <Nav />
                 <div className="main">
