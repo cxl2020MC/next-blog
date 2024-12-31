@@ -83,6 +83,10 @@ body {
         --theme-color-blue-dark: #6699a1;
         --theme-color-yellow-dark: #ddc871;
     }
+
+    img {
+        filter: brightness(75%);
+    }
 }
 
 body {
