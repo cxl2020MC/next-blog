@@ -4,6 +4,8 @@ import Nav from "@/components/nav";
 import Aside from "@/components/aside/aside";
 import Footer from "@/components/footer";
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 export const metadata: Metadata = {
     title: "陈鑫磊的博客",
     description: "一个记录生活、学习、思考的博客",
@@ -30,6 +32,7 @@ export default function RootLayout({
                 </div>
                 {/* 页脚 */}
                 <Footer />
+                <SpeedInsights />
             </body>
         </html>
     );
