@@ -20,9 +20,11 @@ export default function RootLayout({
     return (
         <html lang="zh-CN" data-theme="light">
             <body>
-                <NextTopLoader z-/>
-                {/* 导航栏 */}
-                <Nav />
+                <NextTopLoader />
+                <header>
+                    {/* 导航栏 */}
+                    <Nav />
+                </header>
                 <div className="main">
                     <main className="main-content">
                         {/* 内容 */}
