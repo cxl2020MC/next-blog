@@ -31,7 +31,6 @@ body {
     color-scheme: light dark;
 }
 
-/* [data-theme="light"] */
 /* 默认亮色 */
 :root {
     --bg-color: #f3f3f3;
@@ -57,7 +56,6 @@ body {
     --theme-color-yellow-dark: #ddc871;
 }
 
-/* [data-theme="dark"] */
 /* 暗黑模式 */
 @media (prefers-color-scheme: dark) {
     :root {
