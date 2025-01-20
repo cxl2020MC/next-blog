@@ -4,12 +4,14 @@ import Nav from "@/components/nav";
 import Aside from "@/components/aside/aside";
 import Footer from "@/components/footer";
 
+import blogConfig from "@/blog.config";
+
 import NextTopLoader from 'nextjs-toploader';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
-    title: "陈鑫磊的博客",
-    description: "一个记录生活、学习、思考的博客",
+    title: blogConfig.title,
+    description: blogConfig.description,
 };
 
 export default function RootLayout({

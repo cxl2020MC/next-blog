@@ -1,11 +1,24 @@
-// import Img from "next/image";
-// import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MDXRemote, MDXRemoteProps } from "next-mdx-remote/rsc";
 import blogConfig from "@/blog.config";
-import renderMarkdown from "@/utils/renderMarkdown";
+import rehypeShiki from '@shikijs/rehype'
+
 import "@/app/css/posts.css";
 import "@/app/css/markdown.css";
 
+const mdx_config: MDXRemoteProps["options"] = {
+  mdxOptions: {
+    remarkPlugins: [],
+    rehypePlugins: [[rehypeShiki, {
+      themes: {
+        light: 'catppuccin-latte',
+        dark: 'catppuccin-mocha',
+      },
+      //添加'language-*'到class中，可以用来在代码块中显示语言种类
+      addLanguageClass: true,
+    }],],
+  },
+}
 
 export default async function PostPage(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
@@ -17,15 +30,10 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
   }
   const md_content = post.data.md_content;
   console.log(md_content)
-  const md_html = await renderMarkdown(md_content);
-
-  console.log(md_html)
 
   return (
-    <div className="posts card" dangerouslySetInnerHTML={{
-      __html: md_html
-    }
-    }>
+    <div className="posts card">
+      <MDXRemote source={md_content} options={mdx_config} />;
     </div>
   )
 }
