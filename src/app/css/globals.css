@@ -24,7 +24,7 @@ body {
     --input-border: 1px solid var(--theme-color-gay);
     --bottom-border-readius: 0.5em;
     --card-border-radius: 1em;
-    --blur-filter: blur(10px);
+    --blur-filter: blur(1em);
 }
 
 :root {
