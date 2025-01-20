@@ -22,9 +22,9 @@ body {
     --card-border: 1px solid var(--theme-color-gay);
     --card-border-hover: 1px solid var(--theme-color);
     --input-border: 1px solid var(--theme-color-gay);
-    --bottom-border-readius: 0.5em;
-    --card-border-radius: 1em;
-    --blur-filter: blur(1em);
+    --bottom-border-readius: 0.5rem;
+    --card-border-radius: 1rem;
+    --blur-filter: blur(1rem);
 }
 
 :root {
