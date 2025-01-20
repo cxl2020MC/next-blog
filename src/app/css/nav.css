@@ -60,6 +60,7 @@ nav .nav-btns .nav-btn {
     cursor: pointer;
     font-size: 1rem;
     padding: 0.5em;
+    border-radius: var(--btn-border-radius);
 }
 
 nav .nav-btns .nav-btn:hover {
