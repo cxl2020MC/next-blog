@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import blogConfig from "@/blog.config";
-import "@/app/css/nav.css";
+import "./css/nav.css";
 
 export default function Nav() {
     return (

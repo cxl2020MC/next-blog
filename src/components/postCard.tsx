@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Icon } from "@iconify/react"
 import type { Article } from "@/types/article"
 import { formatUnix } from "@/utils/formatDate"
-import "@/app/css/postCard.css"
+import "./css/postCard.css"
 
 
 export default function PostCard({ Article }: { Article: Article }) {

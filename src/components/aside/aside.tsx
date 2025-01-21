@@ -1,5 +1,5 @@
 import Author from "./author"
-import "@/app/css/aside.css"
+import "./css/aside.css"
 
 export default function Aside() {
     return (

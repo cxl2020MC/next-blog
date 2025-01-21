@@ -1,4 +1,4 @@
-import "@/app/css/footer.css"
+import "./css/footer.css"
 import blogConfig from "@/blog.config";
 
 
