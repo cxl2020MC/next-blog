@@ -148,7 +148,7 @@ a {
 
 @media (min-width: 50em) {
     #main-content {
-        justify-items: content;
+        justify-content: center
     }
 }
 
@@ -167,3 +167,8 @@ main {
     flex:1 1 50em;
     max-width: 60em;
 }
+
+
+
+
+
