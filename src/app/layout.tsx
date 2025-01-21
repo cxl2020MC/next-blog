@@ -26,7 +26,7 @@ export default function RootLayout({
                     {/* 导航栏 */}
                     <Nav />
                 </header>
-                
+
                 <div id="main-content">
                     {/* 内容 */}
                     {children}
