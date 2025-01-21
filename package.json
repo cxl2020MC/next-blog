@@ -13,7 +13,7 @@
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15.1.5",
-    "@shikijs/rehype": "^1.28.0",
+    "@shikijs/rehype": "^2.0.3",
     "@types/mdx": "^2.0.13",
     "@vercel/speed-insights": "^1.1.0",
     "dayjs": "^1.11.13",
