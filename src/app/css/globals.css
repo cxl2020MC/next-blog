@@ -159,4 +159,5 @@ header {
 
 main {
     flex:1 1 50em;
+    max-height: 60em;
 }
