@@ -134,7 +134,7 @@ a {
     border: var(--card-border-hover);
 }
 
-.main {
+#main-content {
     display: flex;
     gap: 1em;
     margin: 1em;
@@ -142,7 +142,7 @@ a {
 }
 
 @media (max-width: 50em) {
-    .main {
+    .main-content {
         flex-direction: column;
     }
 }

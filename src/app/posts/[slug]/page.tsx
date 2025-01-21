@@ -1,6 +1,9 @@
 import { notFound } from "next/navigation";
 import blogConfig from "@/blog.config";
 
+import Aside from "@/components/aside/aside";
+
+
 import "@/app/css/posts.css";
 import "@/app/css/markdown.css";
 
@@ -17,9 +20,16 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
   console.log(md_content)
 
   return (
-    <div className="posts card">
-      
-    </div>
+    <>
+      <main>
+        <div className="posts card">
+
+
+        </div>
+      </main>
+      <Aside />
+
+    </>
   )
 }
 

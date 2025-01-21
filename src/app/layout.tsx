@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./css/globals.css";
 import Nav from "@/components/nav";
-import Aside from "@/components/aside/aside";
 import Footer from "@/components/footer";
 
 import blogConfig from "@/blog.config";
@@ -27,15 +26,12 @@ export default function RootLayout({
                     {/* 导航栏 */}
                     <Nav />
                 </header>
-                <div className="main">
-                    <main className="main-content">
-                        {/* 内容 */}
-                        {children}
-                    </main>
-
-                    {/* 侧边栏 */}
-                    <Aside />
+                
+                <div id="main-content">
+                    {/* 内容 */}
+                    {children}
                 </div>
+
                 {/* 页脚 */}
                 <Footer />
                 <SpeedInsights />
