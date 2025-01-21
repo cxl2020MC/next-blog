@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Markdown from 'markdown-to-jsx'
 import blogConfig from "@/blog.config";
 
 import Aside from "@/components/aside/aside";
@@ -23,7 +24,7 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
     <>
       <main>
         <div className="posts card">
-
+          <Markdown>{md_content}</Markdown>
 
         </div>
       </main>
