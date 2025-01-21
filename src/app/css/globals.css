@@ -142,7 +142,7 @@ a {
 }
 
 @media (max-width: 50em) {
-    .main-content {
+    #main-content {
         flex-direction: column;
     }
 }
