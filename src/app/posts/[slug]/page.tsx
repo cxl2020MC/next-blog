@@ -4,6 +4,8 @@ import blogConfig from "@/blog.config";
 
 import Aside from "@/components/aside/aside";
 
+import mdxShiki from "@/utils/mdxShiki";
+
 import "@/app/css/posts.css";
 import "@/app/css/markdown.css";
 
@@ -24,7 +26,13 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
     <>
       <main>
         <div className="posts card">
-          <MDXRemote source={md_content} />
+          <MDXRemote source={md_content} 
+            options={{
+              mdxOptions: {
+                rehypePlugins: [mdxShiki]
+              }
+            }}
+          />
 
         </div>
       </main>

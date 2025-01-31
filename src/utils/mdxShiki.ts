@@ -7,10 +7,25 @@ const jsEngine = createJavaScriptRegexEngine()
 
 const highlighter = await createHighlighterCore({
     themes: [
-        import('shiki/themes/vitesse-light.mjs')
+        import('shiki/themes/vitesse-light.mjs'),
+        import('shiki/themes/vitesse-dark.mjs'),
     ],
     langs: [
         import('shiki/langs/javascript.mjs'),
     ],
     engine: jsEngine
 })
+
+
+const mdxShikiPulgin =
+    [rehypeShikiFromHighlighter, highlighter, {
+        themes: {
+            light: 'vitesse-light',
+            dark: 'vitesse-dark',
+        }
+    }]
+
+
+export default mdxShikiPulgin
+
+
