@@ -27,6 +27,6 @@ const mdxShikiPlugin =
 
 
 
-export default mdxShikiPlugin as any
+export default mdxShikiPlugin
 
 
