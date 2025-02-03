@@ -25,6 +25,6 @@ const mdxShikiPlugin = rehypeShikiFromHighlighter(highlighter, {
 })
 
 
-export default mdxShikiPulgin
+export default mdxShikiPlugin
 
 
