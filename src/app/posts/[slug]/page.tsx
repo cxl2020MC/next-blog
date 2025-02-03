@@ -30,7 +30,6 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
           <MDXRemote source={md_content} 
             options={{
               mdxOptions: {
-                // @ts-expect-error
                 rehypePlugins: [mdxShiki]
               }
             }}
