@@ -24,8 +24,9 @@ const mdxShikiPulgin =
             dark: 'vitesse-dark',
         }
     }]
+})
 
 
-export default mdxShikiPulgin
+export default mdxShikiPlugin
 
 
