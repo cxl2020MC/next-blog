@@ -11,6 +11,7 @@ import "@/app/css/markdown.css";
 
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
+
 export default async function PostPage(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
   const res = await fetch(`${blogConfig.api}/posts/${params.slug}`, { next: { revalidate: 30 } });
