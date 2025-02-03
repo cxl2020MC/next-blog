@@ -17,16 +17,16 @@ const highlighter = await createHighlighterCore({
 })
 
 
-const mdxShikiPulgin =
+const mdxShikiPlugin =
     [rehypeShikiFromHighlighter, highlighter, {
         themes: {
             light: 'vitesse-light',
             dark: 'vitesse-dark',
         }
     }]
-})
 
 
-export default mdxShikiPlugin
+
+export default mdxShikiPlugin as any
 
 
