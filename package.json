@@ -12,7 +12,7 @@
     "@iconify/react": "^5.2.0",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
-    "@shikijs/rehype": "^2.2.0",
+    "@shikijs/rehype": "^2.3.1",
     "@types/mdx": "^2.0.13",
     "@vercel/speed-insights": "^1.1.0",
     "dayjs": "^1.11.13",
@@ -21,10 +21,10 @@
     "nextjs-toploader": "^3.7.15",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "shiki": "^2.2.0"
+    "shiki": "^2.3.1"
   },
   "devDependencies": {
-    "@types/node": "^22.13.0",
+    "@types/node": "^22.13.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "eslint": "^9.19.0",
