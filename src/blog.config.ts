@@ -9,9 +9,9 @@ const blogConfig = {
         name: '陈鑫磊',
         // description: '一个热爱编程的少年',
         bio: '当你有机会做出选择的时候，不要让自己后悔。',
-        github: 'https://github.com/Jin-JinJin',
+        github: 'https://github.com/cxl2020MC',
     },
-    repo: 'https://github.com/Jin-JinJin/blog',
+    repo: 'https://github.com/cxl2020MC/next-blog',
     nav: {
         links: [
             {
