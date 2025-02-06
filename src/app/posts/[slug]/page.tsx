@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import blogConfig from "@/blog.config";
 
 import Aside from "@/components/aside/aside";
+import Comment from "@/components/comment";
 
 // import mdxShiki from "@/utils/mdxShiki";
 
@@ -59,6 +60,7 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
             }}
           />
         </div>
+        <Comment />
       </main>
       <Aside />
     </>

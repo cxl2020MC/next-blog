@@ -25,7 +25,7 @@ export default function Comment() {
 
     if (blogConfig.twikoo) {
         return (
-            <div id="tcomment">
+            <div id="tcomment" className="card">
                 {loadingStatus === "loading" && <div>正在加载评论...</div>}
                 {loadingStatus === "error" && <div>评论加载失败</div>}
             </div>
