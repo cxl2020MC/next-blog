@@ -58,11 +58,9 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
               }
             }}
           />
-
         </div>
       </main>
       <Aside />
-
     </>
   )
 }

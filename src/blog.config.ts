@@ -35,6 +35,9 @@ const blogConfig = {
                 link: '/tags'
             },
         ]
+    },
+    twikoo: {
+        envId: "https://twikoo.cxl2020mc.top"
     }
 }
 

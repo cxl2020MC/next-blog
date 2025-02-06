@@ -21,7 +21,8 @@
     "nextjs-toploader": "^3.7.15",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "shiki": "^2.3.1"
+    "shiki": "^2.3.1",
+    "twikoo": "^1.6.41"
   },
   "devDependencies": {
     "@types/node": "^22.13.1",
