@@ -59,9 +59,6 @@ body {
 /* 暗黑模式 */
 @media (prefers-color-scheme: dark) {
     :root {
-        color-scheme: dark light;
-    }
-    :root {
         --bg-color: #121212;
         --card-bg: #222;
         --btn-hover-bg: rgba(50 50 50 / 0.8);
