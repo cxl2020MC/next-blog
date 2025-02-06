@@ -60,7 +60,10 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
             }}
           />
         </div>
-        <Comment />
+        <div className="comment card">
+          <Comment />
+        </div>
+
       </main>
       <Aside />
     </>
