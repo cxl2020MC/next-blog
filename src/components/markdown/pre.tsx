@@ -3,7 +3,7 @@ import { codeToHtml } from 'shiki'
 
 
 export default async function Pre({ children, ...other }: { children: React.ReactElement }) {
-
+    console.debug(other)
     const lang = (children.props as { className: string }).className?.split('-')[1] || 'plaintest'
     const code = (children.props as { children: string }).children
     console.debug(lang)
