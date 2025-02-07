@@ -5,6 +5,7 @@ import blogConfig from "@/blog.config";
 import Aside from "@/components/aside/aside";
 import Comment from "@/components/comment";
 
+import Pre from "@/components/markdown/pre";
 // import mdxShiki from "@/utils/mdxShiki";
 
 import "@/app/css/posts.css";
@@ -57,7 +58,9 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
                   }
                 }]]
               },
-
+            }}
+            components={{
+              pre: Pre
             }}
           />
         </div>

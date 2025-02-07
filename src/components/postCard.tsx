@@ -6,7 +6,7 @@ import { formatUnix } from "@/utils/formatDate"
 import "./css/postCard.css"
 
 
-export default function PostCard({ Article, Index }: { Article: Article, Index: number|undefined }) {
+export default function PostCard({ Article, Index }: { Article: Article, Index?: number|undefined }) {
     return (
         <div className="card post-card">
             <div className="post-card__image">
