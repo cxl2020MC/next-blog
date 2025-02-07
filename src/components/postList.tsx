@@ -14,7 +14,7 @@ export default async function PostList() {
     return (
         <div className="post-list">
             { ((await getPostList())as Article[]).map((post, index) => 
-                { return <PostCard Article={post} key={post._id}></PostCard> }
+                { return <PostCard Article={post} Index={index} key={post._id}></PostCard> }
             ) }
         </div>
     )

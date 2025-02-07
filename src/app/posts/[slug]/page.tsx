@@ -21,14 +21,14 @@ import { createJavaScriptRegexEngine } from 'shiki/engine/javascript'
 const jsEngine = createJavaScriptRegexEngine()
 
 const highlighter = await createHighlighterCore({
-    themes: [
-        import('shiki/themes/vitesse-light.mjs'),
-        import('shiki/themes/vitesse-dark.mjs'),
-    ],
-    langs: [
-        import('shiki/langs/javascript.mjs'),
-    ],
-    engine: jsEngine
+  themes: [
+    import('shiki/themes/vitesse-light.mjs'),
+    import('shiki/themes/vitesse-dark.mjs'),
+  ],
+  langs: [
+    import('shiki/langs/javascript.mjs'),
+  ],
+  engine: jsEngine
 })
 
 
@@ -47,16 +47,17 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
     <>
       <main>
         <div className="posts card">
-          <MDXRemote source={md_content} 
+          <MDXRemote source={md_content}
             options={{
               mdxOptions: {
                 rehypePlugins: [[rehypeShikiFromHighlighter, highlighter, {
                   themes: {
-                      light: 'vitesse-light',
-                      dark: 'vitesse-dark',
+                    light: 'vitesse-light',
+                    dark: 'vitesse-dark',
                   }
-              }]]
-              }
+                }]]
+              },
+
             }}
           />
         </div>
