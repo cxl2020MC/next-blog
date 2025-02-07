@@ -50,7 +50,7 @@
 }
 
 .post-list .post-card .post-card__content .post-card__description {
-    margin: 0.5em 0;
+    margin: 1em 0;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
