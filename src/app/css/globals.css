@@ -1,13 +1,7 @@
-@font-face {
-    font-family: "Source Han Sans CN";
-    src: url("https://cxl2020mc-1304820025.file.myqcloud.com/fonts/Source_Han_Sans/SourceHanSansCN-VF.ttf.woff2") format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url(https://cdn-font.hyperos.mi.com/font/css?family=MiSans_VF:VF:Chinese_Simplify,Latin&display=swap);
 
 body {
-    font-family: "Source Han Sans CN", sans-serif;
+    font-family: "MiSans VF", sans-serif;
 }
 
 html,
@@ -95,6 +89,8 @@ body {
     /* -webkit-tap-highlight-color: transparent */
 }
 
+
+/* 全局滚动条 */
 body {
     scrollbar-width: thin;
 }
@@ -135,7 +131,7 @@ a {
 #main-content {
     display: flex;
     gap: 1em;
-    margin: 1em;
+    padding: 1em;
 }
 
 @media (max-width: 50em) {
@@ -154,15 +150,9 @@ a {
     flex: 1 1 auto;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
 
 main {
-    flex:1 1 50em;
+    flex: 1 1 50em;
     max-width: 60em;
     display: flex;
     flex-direction: column

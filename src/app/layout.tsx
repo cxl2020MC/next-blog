@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./css/globals.css";
-import Nav from "@/components/nav";
+import Header from "@/components/header"
 import Footer from "@/components/footer";
 
 import blogConfig from "@/blog.config";
@@ -22,11 +22,8 @@ export default function RootLayout({
         <html lang="zh-CN" data-theme="light">
             <body>
                 <NextTopLoader />
-                <header>
-                    {/* 导航栏 */}
-                    <Nav />
-                </header>
-
+                {/* 头部 */}
+                <Header />
                 <div id="main-content">
                     {/* 内容 */}
                     {children}
