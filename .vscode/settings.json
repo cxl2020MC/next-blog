@@ -1,3 +1,4 @@
 {
-    "editor.experimentalEditContextEnabled": false
+    "editor.experimentalEditContextEnabled": false,
+    "Codegeex.RepoIndex": true
 }

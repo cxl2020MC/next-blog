@@ -1,6 +1,8 @@
 import React from "react";
 import { codeToHtml } from 'shiki'
 
+import CodeCopyButton from "./copybtn";
+
 
 export default async function Pre({ children, ...other }: { children: React.ReactElement }) {
     console.debug(other)
@@ -16,9 +18,18 @@ export default async function Pre({ children, ...other }: { children: React.Reac
         },
     })
     return (
-        <div className="code" dangerouslySetInnerHTML={{ __html: html }}>
-
+        <div className="code-block">
+            <div className="code-header">
+                <div className="code-lang">{lang}</div>
+                <div className="code-control">
+                    <CodeCopyButton code={code} />
+                </div>
+            </div>
+            <div className="code" dangerouslySetInnerHTML={{ __html: html }}></div>
         </div>
 
     )
 }
+
+
+
