@@ -13,7 +13,7 @@ export default async function PostList() {
     }
     return (
         <div className="post-list">
-            { ((await getPostList())as Article[]).map(post => 
+            { ((await getPostList())as Article[]).map((post, index) => 
                 { return <PostCard Article={post} key={post._id}></PostCard> }
             ) }
         </div>

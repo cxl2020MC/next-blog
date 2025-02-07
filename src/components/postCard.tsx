@@ -6,12 +6,12 @@ import { formatUnix } from "@/utils/formatDate"
 import "./css/postCard.css"
 
 
-export default function PostCard({ Article }: { Article: Article }) {
+export default function PostCard({ Article }: { Article: Article }, index: number|undefined) {
     return (
         <div className="card post-card">
             <div className="post-card__image">
                 <Link href={`/posts/${Article.link}`}>
-                    <Image src={Article.cover} alt={Article.title} fill={true} />
+                    <Image src={Article.cover} alt={Article.title} fill={true} priority={index===0 ? true : false} />
                 </Link>
             </div>
             <div className="post-card__content">
