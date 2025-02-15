@@ -167,7 +167,7 @@ main {
     border: none;
     color: inherit;
     cursor: pointer;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     border-radius: var(--btn-border-radius);
 }
 
