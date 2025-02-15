@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import { Icon } from "@iconify/react";
 
 
 export default function CodeCopyButton({ code }: { code: string }) {
@@ -23,7 +24,7 @@ export default function CodeCopyButton({ code }: { code: string }) {
 
     return (
         <button className="code-copy" data-code={code} title="点击复制代码" onClick={copyCode}>
-            {copied ? '已复制' : '复制代码'}
+            <Icon icon={copied ? 'fa6-solid:circle-check' : 'fa6-solid:copy'} />
         </button>
     );
 };

@@ -27,17 +27,18 @@
     justify-content: space-between;
     /* margin: 0.5em; */
     margin-bottom: 0.5em;
+    color: var(--text-color-secondary);
 }
 
 .markdown .code-block-container .code-block-header .code-lang {
     font-weight: bold;
-    color: var(--text-color-secondary);
 }
 
 .markdown .code-block-container .code-block-header .code-copy {
     background: transparent;
     border: none;
     cursor: pointer;
+    color: inherit;
 }
 
 .markdown .code-block-container .code pre {
