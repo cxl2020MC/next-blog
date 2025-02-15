@@ -22,7 +22,7 @@ export default function CodeCopyButton({ code }: { code: string }) {
     };
 
     return (
-        <button className="code-copy blog-btn" data-code={code} onClick={copyCode}>
+        <button className="code-copy" data-code={code} title="点击以复制代码" onClick={copyCode}>
             {copied ? '已复制' : '复制代码'}
         </button>
     );
