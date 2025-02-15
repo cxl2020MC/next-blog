@@ -27,7 +27,7 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
   return (
     <>
       <main>
-        <div className="posts card">
+        <div className="posts card markdown">
           <MDXRemote source={md_content}
             components={{
               pre: Pre

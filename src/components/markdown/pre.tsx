@@ -18,8 +18,8 @@ export default async function Pre({ children, ...other }: { children: React.Reac
         },
     })
     return (
-        <div className="code-block">
-            <div className="code-header">
+        <div className="code-block-container">
+            <div className="code-block-header">
                 <div className="code-lang">{lang}</div>
                 <div className="code-control">
                     <CodeCopyButton code={code} />

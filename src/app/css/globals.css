@@ -16,6 +16,7 @@ body {
     --card-border-hover: 1px solid var(--theme-color);
     --input-border: 1px solid var(--theme-color-gay);
     --btn-border-radius: 0.5rem;
+    --code-border-radius: 0.5rem;
     --card-border-radius: 1rem;
     --blur-filter: blur(1rem);
 }
@@ -156,4 +157,20 @@ main {
     max-width: 60em;
     display: flex;
     flex-direction: column
+}
+
+.blog-btn {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--btn-border-radius);
+}
+
+.blog-btn:hover {
+    background: var(--btn-hover-bg);
 }

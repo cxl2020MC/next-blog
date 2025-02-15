@@ -13,3 +13,27 @@
         text-decoration: var(--shiki-dark-text-decoration) !important;
     }
 }
+
+.markdown .code-block-container {
+    margin: auto;
+    padding: 0.5em;
+    background: var(--bg-color);
+    border-radius: var(--code-border-radius);
+}
+
+.markdown .code-block-container .code-block-header {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0.5em; */
+    margin-bottom: 0.5em;
+}
+
+.markdown .code-block-container .code-block-header .code-lang {
+    font-weight: bold;
+    color: var(--text-color-secondary);
+}
+
+.markdown .code-block-container .code pre {
+    padding: 0.5em;
+    margin: 0;
+}
