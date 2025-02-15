@@ -13,8 +13,8 @@ export default async function Pre({ children, ...other }: { children: React.Reac
     const html = await codeToHtml(code, {
         lang: lang,
         themes: {
-            'light': 'vitesse-light',
-            'dark': 'vitesse-dark'
+            'light': 'one-light',
+            'dark': 'one-dark-pro'
         },
     })
     return (
