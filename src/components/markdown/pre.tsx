@@ -2,6 +2,7 @@ import React from "react";
 import { codeToHtml } from 'shiki'
 
 import CodeCopyButton from "./copybtn";
+import blogConfig from "@/blog.config";
 
 
 export default async function Pre({ children, ...other }: { children: React.ReactElement }) {
@@ -10,6 +11,7 @@ export default async function Pre({ children, ...other }: { children: React.Reac
     const code = (children.props as { children: string }).children
     console.debug(lang)
     console.debug(code)
+    const new_codelang = blogConfig.codeBlock.langTranslate[lang] || lang
     const html = await codeToHtml(code, {
         lang: lang,
         themes: {
@@ -20,7 +22,7 @@ export default async function Pre({ children, ...other }: { children: React.Reac
     return (
         <div className="code-block-container">
             <div className="code-block-header">
-                <div className="code-lang">{lang}</div>
+                <div className="code-lang">{new_codelang}</div>
                 <div className="code-control">
                     <CodeCopyButton code={code} />
                 </div>

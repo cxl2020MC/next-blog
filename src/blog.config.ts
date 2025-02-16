@@ -1,5 +1,7 @@
+import type { BlogConfig } from './types/blog.config'
 
-const blogConfig = {
+
+const blogConfig:BlogConfig = {
     api: 'https://api.blog.cxl2020mc.top',
     title: '陈鑫磊的博客',
     description: '一个记录我学习工作和思考的博客',
@@ -38,7 +40,13 @@ const blogConfig = {
     },
     twikoo: {
         envId: "https://twikoo.cxl2020mc.top"
-    }
+    },
+    codeBlock: {
+        themes: [],
+        langTranslate:{
+            javascript: "JavaScript"
+        }
+    },
 }
 
 export default blogConfig
