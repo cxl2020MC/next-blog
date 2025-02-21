@@ -12,7 +12,6 @@
     "@iconify/react": "^5.2.0",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
-    "@shikijs/rehype": "^2.3.2",
     "@types/mdx": "^2.0.13",
     "@vercel/speed-insights": "^1.2.0",
     "dayjs": "^1.11.13",
@@ -21,17 +20,17 @@
     "nextjs-toploader": "^3.7.15",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "shiki": "^2.3.2",
+    "shiki": "^2.5.0",
     "twikoo": "^1.6.41"
   },
   "devDependencies": {
     "@types/node": "^22.13.4",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "eslint": "^9.20.1",
     "eslint-config-next": "^15.1.7",
     "sass": "^1.85.0",
     "typescript": "^5.7.3"
   },
-  "packageManager": "pnpm@10.4.0+sha512.6b849d0787d97f8f4e1f03a9b8ff8f038e79e153d6f11ae539ae7c435ff9e796df6a862c991502695c7f9e8fac8aeafc1ac5a8dab47e36148d183832d886dd52"
+  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af"
 }
