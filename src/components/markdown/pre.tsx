@@ -15,8 +15,8 @@ export default async function Pre({
     (children.props as { className: string }).className?.split("-")[1] ||
     "plaintest";
   const code = (children.props as { children: string }).children;
-  console.debug(lang);
-  console.debug(code);
+  console.debug(`代码块: ${lang}
+内容: ${code}`);
   const new_codelang = codeBlockLangTranslate[lang] || lang;
   const html = await codeToHtml(code, {
     lang: lang,
