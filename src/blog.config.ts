@@ -1,7 +1,7 @@
-import type { BlogConfig } from './types/blog.config'
+// import type { BlogConfig } from './types/blog.config'
 
 
-const blogConfig: BlogConfig = {
+const blogConfig = {
     api: 'https://api.blog.cxl2020mc.top',
     title: '陈鑫磊的博客',
     description: '一个记录我学习工作和思考的博客',
