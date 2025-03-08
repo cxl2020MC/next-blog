@@ -15,7 +15,7 @@ export default function CodeCopyButton({ code }: { code: string }) {
                 await navigator.clipboard.writeText(textToCopy);
                 setCopied(true);
                 // 可选：给用户一些反馈
-                setTimeout(() => setCopied(false), 2000); // 复制成功提示2秒后消失
+                setTimeout(() => setCopied(false), 3000); // 复制成功提示3秒后消失
             } catch (err) {
                 console.error('无法复制文本: ', err);
             }
