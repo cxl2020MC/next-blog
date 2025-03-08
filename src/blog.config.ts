@@ -1,7 +1,7 @@
 import type { BlogConfig } from './types/blog.config'
 
 
-const blogConfig:BlogConfig = {
+const blogConfig: BlogConfig = {
     api: 'https://api.blog.cxl2020mc.top',
     title: '陈鑫磊的博客',
     description: '一个记录我学习工作和思考的博客',
@@ -43,10 +43,24 @@ const blogConfig:BlogConfig = {
     },
     codeBlock: {
         themes: [],
-        langTranslate:{
+        langTranslate: {
             javascript: "JavaScript"
         }
     },
+}
+
+export const codeBlockLangTranslate = {
+    javascript: "JavaScript",
+    typescript: "TypeScript",
+    vue: "Vue",
+    html: "HTML",
+    css: "CSS",
+    json: "JSON",
+    python: "Python",
+    rust: "Rust",
+    c: "C",
+    cpp: "C++",
+    csharp: "C#",
 }
 
 export default blogConfig
