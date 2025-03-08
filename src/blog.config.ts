@@ -49,18 +49,18 @@ const blogConfig: BlogConfig = {
     },
 }
 
-export const codeBlockLangTranslate = {
-    javascript: "JavaScript",
-    typescript: "TypeScript",
-    vue: "Vue",
-    html: "HTML",
-    css: "CSS",
-    json: "JSON",
-    python: "Python",
-    rust: "Rust",
-    c: "C",
-    cpp: "C++",
-    csharp: "C#",
-}
+// export const codeBlockLangTranslate = {
+//     javascript: "JavaScript",
+//     typescript: "TypeScript",
+//     vue: "Vue",
+//     html: "HTML",
+//     css: "CSS",
+//     json: "JSON",
+//     python: "Python",
+//     rust: "Rust",
+//     c: "C",
+//     cpp: "C++",
+//     csharp: "C#",
+// }
 
 export default blogConfig
