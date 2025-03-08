@@ -5,6 +5,7 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
+    border-bottom: var(--card-border);
     background: var(--blur-bg);
     backdrop-filter: var(--blur-filter);
     z-index: 1000;
