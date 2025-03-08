@@ -12,7 +12,7 @@ export default function Comment() {
       import("twikoo")
         .then(({ default: init }) => {
           init({
-            envId: blogConfig.twikoo?.envId,
+            envId: blogConfig.twikoo?.envId!,
             el: "#tcomment",
           });
         })
