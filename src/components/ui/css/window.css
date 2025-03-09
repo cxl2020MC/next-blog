@@ -1,0 +1,29 @@
+.window {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100dvh;
+    /* width: 100%; */
+    z-index: 1000;
+    padding: .5em;
+    background: var(--blur-bg);
+    backdrop-filter: var(--blur-filter);
+    flex-direction: column;
+}
+
+.window.open {
+    display: flex;
+}
+
+.window .window-header {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.window button.window-close {
+    align-self: right;
+    font-size: 1.5em
+}

@@ -13,7 +13,7 @@ export default function Nav() {
                 <NavLinks />
             </div>
             <div className="nav-btns">
-                <NavMenuBtn icon="fa6-brands:github" />
+                {/* <NavMenuBtn icon="fa6-brands:github" /> */}
                 <NavMenuBtn icon="fa6-solid:bars" />
             </div>
         </nav>
