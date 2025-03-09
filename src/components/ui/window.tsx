@@ -4,6 +4,6 @@ import React from "react";
 
 export default function NavMenu({children}: {children: React.ReactElement}) {
     return (<div className="window">
-        
+        {children}
     </div>);
 }
