@@ -9,6 +9,11 @@ export default async function Shiki({ code, lang }: { code: string, lang: string
             'dark': 'vitesse-dark'
         },
     })
+    console.log(`渲染代码块成功: 
+    语言：${lang} 
+    ${code}
+    html: 
+    ${html}`)
     return (
         <div className='code' dangerouslySetInnerHTML={{ __html: html }}></div>
     )
