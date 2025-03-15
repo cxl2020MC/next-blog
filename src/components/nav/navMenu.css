@@ -1,0 +1,21 @@
+.nav-mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background: var(--blur-bg);
+    backdrop-filter: var(--blur-filter);
+    z-index: 9999;
+}
+
+@media (max-width: 40em) {
+    .nav-mobile-menu {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+}
+
