@@ -11,7 +11,7 @@
 }
 
 @media (max-width: 40em) {
-    .nav-mobile-menu {
+    .nav-mobile-menu.open {
         display: block;
     }
     .nav-menu {
