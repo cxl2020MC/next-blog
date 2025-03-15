@@ -14,7 +14,7 @@ export default function Header() {
     return (
         <header>
             {/* 导航栏 */}
-            <Nav />
+            <Nav toggleNav={toggleNav} />
             <NavMobileMenu navOpen={navOpen} toggleNav={toggleNav} />
         </header>
     )
