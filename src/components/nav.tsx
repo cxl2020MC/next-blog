@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import blogConfig from "@/blog.config";
 import "./css/nav.css";
-import NavMobileMenu from "./nav/navMobileMenu";
 
 export default function Nav() {
     return (
@@ -17,7 +16,6 @@ export default function Nav() {
                 {/* <NavMenuBtn icon="fa6-brands:github" /> */}
                 <NavMenuBtn icon="fa6-solid:bars" />
             </div>
-            <NavMobileMenu></NavMobileMenu>
         </nav>
     );
 }

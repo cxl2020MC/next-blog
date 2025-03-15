@@ -1,16 +1,12 @@
-"use client"
 import { Icon } from '@iconify/react';
-import { useState } from 'react';
+// import { useState } from 'react';
 // import Window from '@/components/ui/window';
 // import Link from 'next/link';
 import "./navMenu.css"
 
-export default function NavMobileMenu() {
-  const [navOpen, setNavOpen] = useState<boolean>(false);
-  function toggleNav() {
-    console.log("切换导航栏菜单打开状态");
-    setNavOpen(!navOpen);
-  }
+
+export default function NavMobileMenu({navOpen, toggleNav}: {navOpen: boolean, toggleNav: () => void}) {
+
   const navClassName = navOpen ? "nav-mobile-menu open" : "nav-mobile-menu";
   return (
     <div className={navClassName}>

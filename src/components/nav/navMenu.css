@@ -6,16 +6,13 @@
     width: 100dvw;
     height: 100dvh;
     background: var(--blur-bg);
-    backdrop-filter: var(--blur-filter);
     z-index: 9999;
 }
 
 @media (max-width: 40em) {
     .nav-mobile-menu.open {
         display: block;
-    }
-    .nav-menu {
-        display: none;
+        backdrop-filter: var(--blur-filter);
+
     }
 }
-
