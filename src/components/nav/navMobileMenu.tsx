@@ -1,7 +1,7 @@
 "use client"
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
-import Window from '@/components/ui/window';
+// import Window from '@/components/ui/window';
 // import Link from 'next/link';
 import "./navMenu.css"
 
