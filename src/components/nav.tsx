@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import blogConfig from "@/blog.config";
 import "./css/nav.css";
 
-export default function Nav() {
+export default function Nav({toggleNav}: {toggleNav: () => void}) {
     return (
         <nav className="nav">
             <Link id="site-name" href="/">
@@ -14,7 +14,7 @@ export default function Nav() {
             </div>
             <div className="nav-btns">
                 {/* <NavMenuBtn icon="fa6-brands:github" /> */}
-                <NavMenuBtn icon="fa6-solid:bars" />
+                <NavMenuBtn icon="fa6-solid:bars" onClick={toggleNav} />
             </div>
         </nav>
     );
@@ -31,9 +31,9 @@ function NavLinks() {
     });
 }
 
-function NavMenuBtn({ icon }: { icon: string; onClick?: () => void }) {
+function NavMenuBtn({ icon, onClick }: { icon: string; onClick?: () => void }) {
     return (
-        <button className="nav-btn">
+        <button className="nav-btn" onClick={onClick}>
             <Icon icon={icon}></Icon>
         </button>
     );
