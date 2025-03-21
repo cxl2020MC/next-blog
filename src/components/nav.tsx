@@ -7,7 +7,7 @@ export default function Nav() {
     return (
         <nav className="nav">
             <Link id="site-name" href="/">
-                陈鑫磊的博客
+                {blogConfig.title}
             </Link>
             <div className="nav-links">
                 <NavLinks />
