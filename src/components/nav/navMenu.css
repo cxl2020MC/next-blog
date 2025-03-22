@@ -27,6 +27,7 @@
         background: var(--blur-bg);
     }
     .nav-mobile-menu.open .nav-menu-container {
+        backdrop-filter: var(--blur-filter);
         animation: nav-mobile-menu-container-open 0.5s ease-in-out forwards;
     }
 }
@@ -38,7 +39,6 @@
     }
     100% {
         /* transform: translateX(0); */
-        backdrop-filter: var(--blur-filter);
         /* background: var(--blur-bg); */
         transform: translateY(0);
     }
