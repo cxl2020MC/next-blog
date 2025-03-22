@@ -13,7 +13,8 @@ export default function NavMobileMenu({navOpen, toggleNav}: {navOpen: boolean, t
       {/* <div className="mask"></div> */}
       <div className="nav-menu-container">
         <div className="nav-menu-header">
-          <button className="blog-btn window-close" onClick={toggleNav} >
+          <h3 className="nav-menu-title">菜单</h3>
+          <button className="nav-menu-close-btn" onClick={toggleNav} >
             <Icon icon="fa6-solid:xmark" />
           </button>
         </div>
