@@ -13,15 +13,15 @@
 @media (max-width: 40em) {
     .nav-mobile-menu.open {
         display: block;
-        animation: nav-mobile-menu-open 0.3s ease-in-out forwards;
+        animation: nav-mobile-menu-open .3s ease-in-out forwards;
     }
 }
 
 @keyframes nav-mobile-menu-open {
-    0% {
-        background: transparent;
+    /* 0% { */
+        /* background: transparent; */
         /* transform: translateX(-100%); */
-    }
+    /* } */
     100% {
         /* transform: translateX(0); */
         backdrop-filter: var(--blur-filter);
