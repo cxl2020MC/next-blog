@@ -11,3 +11,7 @@ footer .footer-info {
     flex-direction: column;
     align-items: center;
 }
+
+footer p {
+    margin: .5em 0;
+}
