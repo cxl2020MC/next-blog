@@ -13,6 +13,7 @@
 
 .nav-mobile-menu .nav-menu-container {
     height: 90%;
+    height: calc(100% - 3.5em);
     width: 100%;
     position: absolute;
     bottom: 0;
