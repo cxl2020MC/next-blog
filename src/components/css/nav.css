@@ -50,13 +50,13 @@ nav .nav-links a:hover {
     color: var(--text-color-hover);
 }
 
+
 nav .nav-btns {
     display: flex;
     align-items: center;
     gap: 0.5em;
     margin: 0.5em;
 }
-
 
 nav .nav-btns .nav-btn {
     display: flex;
@@ -74,4 +74,10 @@ nav .nav-btns .nav-btn {
 
 nav .nav-btns .nav-btn:hover {
     background: var(--btn-hover-bg);
+}
+
+@media (min-width: 40em) {
+    nav .nav-btns .nav-btn.toggle-mobile-menu-btn {
+        display: none;
+    }
 }

@@ -14,7 +14,7 @@ export default function Nav({toggleNav}: {toggleNav: () => void}) {
             </div>
             <div className="nav-btns">
                 {/* <NavMenuBtn icon="fa6-brands:github" /> */}
-                <NavMenuBtn icon="fa6-solid:bars" onClick={toggleNav} />
+                <NavMenuBtn icon="fa6-solid:bars" className="toggle-mobile-menu-btn" onClick={toggleNav} />
             </div>
         </nav>
     );
@@ -31,9 +31,9 @@ function NavLinks() {
     });
 }
 
-function NavMenuBtn({ icon, onClick }: { icon: string; onClick?: () => void }) {
+function NavMenuBtn({ icon, className, onClick }: { icon: string, className?: string, onClick?: () => void }) {
     return (
-        <button className="nav-btn" onClick={onClick}>
+        <button className={className ? "nav-btn " + className : "nav-btn"} onClick={onClick}>
             <Icon icon={icon}></Icon>
         </button>
     );
