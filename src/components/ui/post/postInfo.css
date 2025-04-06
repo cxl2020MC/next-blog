@@ -1,0 +1,11 @@
+.post-infos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em;
+}
+
+.post-infos .post-info {
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+}

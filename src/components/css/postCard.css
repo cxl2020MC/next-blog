@@ -59,14 +59,3 @@
     text-overflow: ellipsis;
 }
 
-.post-list .post-card .post-card__content .post-card__infos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.2em;
-}
-
-.post-list .post-card .post-card__content .post-card__info {
-    display: flex;
-    gap: 0.2em;
-    align-items: center;
-}

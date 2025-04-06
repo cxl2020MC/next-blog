@@ -86,7 +86,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-size: 1rem;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     /* -webkit-tap-highlight-color: transparent */
 }
 
