@@ -20,6 +20,10 @@ nav {
     backdrop-filter: var(--blur-filter);
 }
 
+.site-name {
+    display: flex;
+}
+
 #site-name {
     font-size: 1.3em;
     font-weight: bold;

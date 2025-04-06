@@ -3,12 +3,14 @@ import { Icon } from "@iconify/react";
 import blogConfig from "@/blog.config";
 import "./css/nav.css";
 
-export default function Nav({toggleNav}: {toggleNav: () => void}) {
+export default function Nav({ toggleNav }: { toggleNav: () => void }) {
     return (
         <nav className="nav">
-            <Link id="site-name" href="/">
-                {blogConfig.title}
-            </Link>
+            <div className="site-name">
+                <Link id="site-name" href="/">
+                    {blogConfig.title}
+                </Link>
+            </div>
             <div className="nav-links">
                 <NavLinks />
             </div>
