@@ -129,6 +129,16 @@ a {
     border: var(--card-border-hover);
 }
 
+@media (max-width: 50em) {
+    .card.mobile-card {
+        background: inherit;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+    }
+}
+
+
 #main-content {
     display: flex;
     gap: 1em;

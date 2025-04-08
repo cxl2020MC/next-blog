@@ -34,7 +34,7 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
             }}
           />
         </div>
-        <div className="comment card">
+        <div className="comment card mobile-card">
           <Comment />
         </div>
 

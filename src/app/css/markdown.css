@@ -19,6 +19,7 @@
     margin: auto;
     padding: 0.5em;
     background: var(--bg-color);
+    /* background: var(--theme-color-gay); */
     border-radius: var(--code-border-radius);
 }
 
