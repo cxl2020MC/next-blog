@@ -16,7 +16,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "dayjs": "^1.11.13",
-    "next": "^15.2.4",
+    "next": "^15.3.0",
     "next-mdx-remote": "^5.0.0",
     "nextjs-toploader": "^3.8.16",
     "react": "^19.1.0",
@@ -27,9 +27,9 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
     "eslint": "^9.24.0",
-    "eslint-config-next": "^15.2.4",
+    "eslint-config-next": "^15.3.0",
     "sass": "^1.86.3",
     "typescript": "^5.8.3"
   },
