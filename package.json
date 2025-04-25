@@ -16,7 +16,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "dayjs": "^1.11.13",
-    "next": "^15.3.0",
+    "next": "^15.3.1",
     "next-mdx-remote": "^5.0.0",
     "nextjs-toploader": "^3.8.16",
     "react": "^19.1.0",
@@ -25,20 +25,21 @@
     "twikoo": "^1.6.42"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@types/react": "^19.1.0",
+    "@types/node": "^22.15.2",
+    "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
-    "eslint": "^9.24.0",
-    "eslint-config-next": "^15.3.0",
-    "sass": "^1.86.3",
+    "eslint": "^9.25.1",
+    "eslint-config-next": "^15.3.1",
+    "sass": "^1.87.0",
     "typescript": "^5.8.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
       "@vercel/speed-insights",
-      "sharp"
+      "sharp",
+      "unrs-resolver"
     ]
   },
-  "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971"
+  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f"
 }
