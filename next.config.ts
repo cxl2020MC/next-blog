@@ -4,12 +4,14 @@ const nextConfig: NextConfig = {
     transpilePackages: ['next-mdx-remote'],
     // pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
     images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'cxl2020mc-1304820025.file.myqcloud.com',
-            }
-        ]
+        // 禁用图像优化
+        unoptimized: true,
+        // remotePatterns: [
+        //     {
+        //         protocol: 'https',
+        //         hostname: 'cxl2020mc-1304820025.file.myqcloud.com',
+        //     }
+        // ]
     },
 };
 
