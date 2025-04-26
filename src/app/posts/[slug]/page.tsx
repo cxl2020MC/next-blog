@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import type { Metadata, ResolvingMetadata } from 'next'
+import type { Metadata } from 'next'
 
 import blogConfig from "@/blog.config";
 
@@ -14,17 +14,14 @@ import "@/app/css/markdown.css";
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
 
-export async function generateMetadata(
-  { params }: { params: Promise<{ slug: string }> },
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   // 读取路由参数
   const slug = (await params).slug
 
   // 获取数据
   const res = await fetch(`${blogConfig.api}/posts/${slug}`, { next: { revalidate: 30 } });
   const post = await res.json();
-  
+
   const metadata: Metadata = {
     title: post.data.title,
     description: post.data.description,
