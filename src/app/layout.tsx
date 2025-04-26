@@ -10,8 +10,12 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
-    title: blogConfig.title,
+    title: {
+        template: `%s | ${blogConfig.title}`,
+        default: blogConfig.title
+    },
     description: blogConfig.description,
+    keywords: blogConfig.keywords,
 };
 
 export default function RootLayout({
