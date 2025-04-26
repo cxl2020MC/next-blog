@@ -3,10 +3,10 @@
 const blogConfig = {
   api: "https://api.blog.cxl2020mc.top",
   title: "陈鑫磊的博客",
-  description: "一个记录我学习工作和思考的博客",
+  description: "一个记录我学习和思考的博客",
+  // favicon: "https://cxl2020mc-1304820025.file.myqcloud.com/avatar-round.webp",
   author: {
     avatar: "https://cxl2020mc-1304820025.file.myqcloud.com/avatar.png",
-    favicon: "https://cxl2020mc-1304820025.file.myqcloud.com/avatar.svg",
     name: "陈鑫磊",
     // description: '一个热爱编程的少年',
     bio: "当你有机会做出选择的时候，不要让自己后悔。",
