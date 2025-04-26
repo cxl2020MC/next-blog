@@ -17,6 +17,7 @@ aside .author .author__avatar {
     position: relative;
     width: 5em;
     height: 5em;
+    clip-path: circle(closest-side);
 }
 
 aside .author .author__info {

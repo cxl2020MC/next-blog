@@ -5,7 +5,7 @@ const blogConfig = {
   title: "陈鑫磊的博客",
   description: "一个记录我学习工作和思考的博客",
   author: {
-    avatar: "https://cxl2020mc-1304820025.file.myqcloud.com/avatar.svg",
+    avatar: "https://cxl2020mc-1304820025.file.myqcloud.com/avatar.png",
     favicon: "https://cxl2020mc-1304820025.file.myqcloud.com/avatar.svg",
     name: "陈鑫磊",
     // description: '一个热爱编程的少年',
