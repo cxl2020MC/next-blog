@@ -14,6 +14,12 @@ import "@/app/css/markdown.css";
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
 
+async function get_post_data(slug: string) {
+  const res = await fetch(`${blogConfig.api}/posts/${slug}`, { next: { revalidate: 30 } });
+  const post = await res.json();
+  return post
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   // 读取路由参数
   const slug = (await params).slug
