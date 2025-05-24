@@ -25,14 +25,14 @@ nav {
     font-size: 1.3em;
     font-weight: bold;
     color: var(--text-color);
-    margin: 0.5rem 0;
+    margin: 0.5rem;
     margin-left: 1rem;
 }
 
 nav .nav-right {
     display: flex;
     align-items: center;
-    margin: 0.5em;
+    margin: 0 0.5em;
 }
 
 nav .nav-links {
