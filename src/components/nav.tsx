@@ -11,13 +11,16 @@ export default function Nav({ toggleNav }: { toggleNav: () => void }) {
                     {blogConfig.title}
                 </Link>
             </div>
-            <div className="nav-links">
-                <NavLinks />
+            <div className="nav-right">
+                <div className="nav-links">
+                    <NavLinks />
+                </div>
+                <div className="nav-btns">
+                    {/* <NavMenuBtn icon="fa6-brands:github" /> */}
+                    <NavMenuBtn icon="fa6-solid:bars" className="toggle-mobile-menu-btn" onClick={toggleNav} />
+                </div>
             </div>
-            <div className="nav-btns">
-                {/* <NavMenuBtn icon="fa6-brands:github" /> */}
-                <NavMenuBtn icon="fa6-solid:bars" className="toggle-mobile-menu-btn" onClick={toggleNav} />
-            </div>
+
         </nav>
     );
 }
