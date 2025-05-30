@@ -14,19 +14,18 @@ import "@/app/css/markdown.css";
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
 
-// async function get_post_data(slug: string) {
-//   const res = await fetch(`${blogConfig.api}/posts/${slug}`, { next: { revalidate: 30 } });
-//   const post = await res.json();
-//   return post
-// }
+async function get_post_data(slug: string) {
+  const res = await fetch(`${blogConfig.api}/posts/${slug}`, { next: { revalidate: 30 } });
+  const post = await res.json();
+  return post
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   // 读取路由参数
   const slug = (await params).slug
 
   // 获取数据
-  const res = await fetch(`${blogConfig.api}/posts/${slug}`, { next: { revalidate: 30 } });
-  const post = await res.json();
+  const post = await get_post_data(slug)
 
   const metadata: Metadata = {
     title: post.data.title,
@@ -39,8 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function PostPage(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
-  const res = await fetch(`${blogConfig.api}/posts/${params.slug}`, { next: { revalidate: 30 } });
-  const post = await res.json();
+  const post = await get_post_data(params.slug)
   console.debug(post)
   if (!post.data) {
     notFound();
