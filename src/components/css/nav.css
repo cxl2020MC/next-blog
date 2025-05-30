@@ -6,11 +6,8 @@ header {
 }
 
 nav {
-    /* display: flex;
-    justify-content: space-between; */
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-areas: "site-name nav-links nav-btns";
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     /* position: sticky;
     top: 0;
@@ -32,9 +29,15 @@ nav {
     margin-left: 1rem;
 }
 
-nav .nav-links {
+nav .nav-right {
     display: flex;
     align-items: center;
+    margin: 0 0.5em;
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: left;
     gap: 1em;
     margin: 0.5em;
 }
