@@ -14,7 +14,7 @@ export default function Author(){
                 <p className="author__bio">{blogConfig.author.bio}</p>
             </div>
             <div className="author__social">
-                <Link href="https://github.com/luisfernando-1" target="_blank" rel="noreferrer">
+                <Link href={blogConfig.author.github} className="author__social__item" title="Github" aria-label="Github"get="_blank" rel="noreferrer">
                     {/* <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="github" /> */}
                     <Icon icon="fa6-brands:github"></Icon>
                 </Link>

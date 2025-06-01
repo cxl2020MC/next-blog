@@ -3,7 +3,7 @@ aside {
     flex-direction: column;
     gap: 1em;
     flex: 0 1 15em;
-    max-width: 30em;
+    max-width: 60em;
 }
 
 aside .author {
