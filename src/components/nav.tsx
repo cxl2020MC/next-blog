@@ -1,8 +1,12 @@
+import { createContext } from 'react';
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import blogConfig from "@/blog.config";
 import "./css/nav.css";
 import "./css/navMenu.css";
+
+
+// export const MobileMenuContext = createContext({ navOpen: false, toggleNav: () => { } });
 
 export default function Nav({ toggleNav }: { toggleNav: () => void }) {
     return (

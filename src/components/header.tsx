@@ -8,8 +8,8 @@ import { NavMobileMenu } from "@/components/nav";
 export default function Header() {
     const [navOpen, setNavOpen] = useState<boolean>(false);
     function toggleNav() {
-      console.log("切换导航栏菜单打开状态");
-      setNavOpen(!navOpen);
+        console.log("切换导航栏菜单打开状态");
+        setNavOpen(!navOpen);
     }
     return (
         <header>
