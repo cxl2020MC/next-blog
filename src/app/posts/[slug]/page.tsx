@@ -15,7 +15,8 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 
 
 async function get_post_data(slug: string) {
-  const res = await fetch(`${blogConfig.api}/posts/${slug}`, { next: { revalidate: 30 } });
+  // const res = await fetch(`${blogConfig.api}/posts/${slug}`, { next: { revalidate: 30 } });
+  const res = await fetch(`${blogConfig.api}/posts/${slug}`);
   const post = await res.json();
   return post
 }
