@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import Nav from "@/components/nav";
-import NavMobileMenu from "./nav/navMobileMenu";
+import { NavMobileMenu } from "@/components/nav";
 
 
 
