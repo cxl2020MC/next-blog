@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from 'next'
+import Image from "next/image"
 
 import blogConfig from "@/blog.config";
 
@@ -50,6 +51,13 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
   return (
     <>
       <main>
+        <div className="post-cover card">
+          <Image className="post-cover-img" src={post.data.cover} alt={post.data.title} fill={true} />
+          <div className="post-info-container">
+            <h1 className="post-title">{post.data.title}</h1>
+            {/* <p className="post-date">{post.data.date}</p> */}
+          </div>
+        </div>
         <div className="posts card markdown">
           <MDXRemote source={md_content}
             components={{

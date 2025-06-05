@@ -30,7 +30,7 @@ body {
     --bg-color: #f3f3f3;
     --card-bg: #fff;
     --btn-hover-bg: rgba(50 50 50 / 0.2);
-    --blur-bg: rgba(255 255 255 / 0.8);
+    --blur-bg: rgba(255 255 255 / 0.5);
 
     --text-color: #333;
     --text-color-secondary: #666;
@@ -56,7 +56,7 @@ body {
         --bg-color: #121212;
         --card-bg: #222;
         --btn-hover-bg: rgba(50 50 50 / 0.8);
-        --blur-bg: rgba(50 50 50 / 0.8);
+        --blur-bg: rgba(50 50 50 / 0.5);
 
         --text-color: #fff;
         --text-color-secondary: #aaa;
