@@ -19,7 +19,7 @@
     margin: auto;
     padding: 0.5em;
     background: var(--bg-color);
-    /* background: var(--theme-color-gay); */
+    background: var(--theme-color-gay);
     border-radius: var(--code-border-radius);
 }
 
@@ -45,6 +45,7 @@
 .markdown .code-block-container .code pre {
     padding: 0.5em;
     margin: 0;
+    border-radius: var(--code-border-radius);
 }
 
 
