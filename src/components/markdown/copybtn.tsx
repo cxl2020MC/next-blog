@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import { toast } from 'sonner';
 
 export default function CodeCopyButton({ code }: { code: string }) {
   const [copied, setCopied] = useState(false);
@@ -14,7 +15,9 @@ export default function CodeCopyButton({ code }: { code: string }) {
       try {
         // 使用Clipboard API复制文本
         await navigator.clipboard.writeText(textToCopy);
+        // toast.success('复制成功');
         setCopied(true);
+        toast.success('复制成功');
         // 可选：给用户一些反馈
         setTimeout(() => setCopied(false), 3000); // 复制成功提示3秒后消失
       } catch (err) {

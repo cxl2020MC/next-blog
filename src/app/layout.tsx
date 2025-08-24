@@ -6,8 +6,11 @@ import Footer from "@/components/footer";
 import blogConfig from "@/blog.config";
 
 import NextTopLoader from 'nextjs-toploader';
+import { Toaster } from 'sonner';
+
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
+
 
 export const metadata: Metadata = {
     title: {
@@ -46,6 +49,7 @@ export default function RootLayout({
 
                 {/* 页脚 */}
                 <Footer />
+                <Toaster richColors closeButton position="top-right" theme="system" />
                 <SpeedInsights />
                 <Analytics />
             </body>
