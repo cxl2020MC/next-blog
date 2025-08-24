@@ -26,7 +26,7 @@ export default function RootLayout({
     return (
         <html lang="zh-CN" data-theme="light">
             <head>
-                {/* <link rel="icon" href={blogConfig.favicon} sizes="any" /> */}
+                <link rel="icon" href={blogConfig.favicon} sizes="any" />
             </head>
             <body>
                 <NextTopLoader />
