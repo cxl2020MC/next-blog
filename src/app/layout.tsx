@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     icons: [
         {
             rel: 'icon',
+            sizes: 'any',
             url: blogConfig.favicon,
         },
     ],
