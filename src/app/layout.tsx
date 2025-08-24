@@ -16,6 +16,12 @@ export const metadata: Metadata = {
     },
     description: blogConfig.description,
     keywords: blogConfig.keywords,
+    icons: [
+        {
+            rel: 'icon',
+            url: blogConfig.favicon,
+        },
+    ],
 };
 
 export default function RootLayout({
@@ -26,7 +32,7 @@ export default function RootLayout({
     return (
         <html lang="zh-CN" data-theme="light">
             <head>
-                <link rel="icon" href={blogConfig.favicon} sizes="any" />
+                {/* <link rel="icon" href={blogConfig.favicon} sizes="any" /> */}
             </head>
             <body>
                 <NextTopLoader />
