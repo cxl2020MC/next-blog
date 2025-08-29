@@ -12,7 +12,7 @@ import Pre from "@/components/markdown/pre";
 import "@/app/css/posts.css";
 import "@/app/css/markdown.css";
 
-import { MDXRemote } from 'next-mdx-remote/rsc'
+import { MDXRemote } from 'next-mdx-remote-client/rsc'
 
 
 async function get_post_data(slug: string) {
