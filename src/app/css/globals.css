@@ -19,6 +19,7 @@ body {
     --code-border-radius: 0.5rem;
     --card-border-radius: 1rem;
     --blur-filter: blur(1rem);
+    --animation-time: 0.3s;
 }
 
 :root {
@@ -78,6 +79,12 @@ body {
 
     img {
         filter: brightness(75%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --animation-time: 0s;
     }
 }
 

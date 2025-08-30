@@ -126,12 +126,12 @@ nav .nav-btns .nav-btn:hover {
     .nav-mobile-menu.open {
         display: block;
         /* background: var(--blur-bg); */
-        animation: nav-mobile-menu-mask-open 0.3s ease-in-out forwards;
+        animation: nav-mobile-menu-mask-open var(--animation-time) ease-in-out forwards;
     }
 
     .nav-mobile-menu.open .nav-menu-container {
         backdrop-filter: var(--blur-filter);
-        animation: nav-mobile-menu-container-open 0.3s ease-in-out forwards;
+        animation: nav-mobile-menu-container-open var(--animation-time) ease-in-out forwards;
     }
 }
 

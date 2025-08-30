@@ -1,1 +1,0 @@
-let mqList = window.matchMedia('(prefers-reduced-motion: reduce)');

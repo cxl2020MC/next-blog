@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./css/globals.css";
-import Header from "@/components/header"
+import Header from "@/components/header";
 import Footer from "@/components/footer";
+import ReducedMotion from "@/components/ui/reducedMotion";
 
 import blogConfig from "@/blog.config";
 
@@ -50,6 +51,7 @@ export default function RootLayout({
                 {/* 页脚 */}
                 <Footer />
                 <Toaster richColors closeButton position="top-right" theme="system" />
+                <ReducedMotion />
                 <SpeedInsights />
                 <Analytics />
             </body>

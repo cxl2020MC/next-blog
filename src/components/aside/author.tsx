@@ -15,7 +15,6 @@ export default function Author() {
             </div>
             <div className="author__social">
                 <Link href={blogConfig.author.github} target="_blank" rel="noreferrer">
-                    {/* <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="github" /> */}
                     <Icon icon="fa6-brands:github"></Icon>
                 </Link>
             </div>
