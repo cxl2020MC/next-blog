@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import blogConfig from "@/blog.config";
 import "./css/nav.css";
+import { title } from "process";
 
 
 // export const MobileMenuContext = createContext({ navOpen: false, toggleNav: () => { } });
@@ -20,7 +21,7 @@ export default function Nav({ toggleNav }: { toggleNav: () => void }) {
                     <NavLinks />
                 </div>
                 <div className="nav-btns">
-                    <NavMenuBtn icon="fa6-solid:bars" className="toggle-mobile-menu-btn" onClick={toggleNav} />
+                    <NavMenuBtn icon="fa6-solid:bars" className="toggle-mobile-menu-btn" onClick={toggleNav} title="打开菜单" />
                 </div>
             </div>
 
@@ -39,9 +40,9 @@ function NavLinks() {
     });
 }
 
-function NavMenuBtn({ icon, className, onClick }: { icon: string, className?: string, onClick?: () => void }) {
+function NavMenuBtn({ icon, className, onClick }: { icon: string, className?: string, onClick?: () => void, title?: string }) {
     return (
-        <button className={className ? "nav-btn " + className : "nav-btn"} onClick={onClick}>
+        <button className={className ? "nav-btn " + className : "nav-btn"} onClick={onClick} title={title ? title : ""}>
             <Icon icon={icon}></Icon>
         </button>
     );
