@@ -27,7 +27,7 @@ export default function CodeCopyButton({ code }: { code: string }) {
       title="点击复制代码"
       onClick={copyCode}
     >
-      <Icon icon="fa6-solid:copy" />
+      <Icon icon="fa7-solid:copy" />
     </button>
   );
 }

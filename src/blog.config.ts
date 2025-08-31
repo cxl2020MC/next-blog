@@ -18,22 +18,22 @@ const blogConfig = {
     links: [
       {
         name: "友链",
-        icon: "fa6-solid:link",
+        icon: "fa7-solid:link",
         link: "/links",
       },
       {
         name: "关于",
-        icon: "fa6-solid:address-card",
+        icon: "fa7-solid:address-card",
         link: "/about",
       },
       {
         name: "归档",
-        icon: "fa6-solid:box",
+        icon: "fa7-solid:box",
         link: "/archives",
       },
       {
         name: "标签",
-        icon: "fa6-solid:tags",
+        icon: "fa7-solid:tags",
         link: "/tags",
       },
     ],

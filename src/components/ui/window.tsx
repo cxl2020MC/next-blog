@@ -8,7 +8,7 @@ export default function Window({ children, className, open, onClose }: { childre
 
         <div className="window-header">
             <button className="blog-btn window-close" onClick={onClose} >
-                <Icon icon="fa6-solid:xmark" />
+                <Icon icon="fa7-solid:xmark" />
             </button>
         </div>
         <div className="window-content">

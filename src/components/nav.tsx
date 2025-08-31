@@ -21,7 +21,7 @@ export default function Nav({ toggleNav }: { toggleNav: () => void }) {
                     <NavLinks />
                 </div>
                 <div className="nav-btns">
-                    <NavMenuBtn icon="fa6-solid:bars" className="toggle-mobile-menu-btn" onClick={toggleNav} title="打开菜单" />
+                    <NavMenuBtn icon="fa7-solid:bars" className="toggle-mobile-menu-btn" onClick={toggleNav} />
                 </div>
             </div>
 
@@ -40,9 +40,9 @@ function NavLinks() {
     });
 }
 
-function NavMenuBtn({ icon, className, onClick }: { icon: string, className?: string, onClick?: () => void, title?: string }) {
+function NavMenuBtn({ icon, className, onClick }: { icon: string, className?: string, onClick?: () => void }) {
     return (
-        <button className={className ? "nav-btn " + className : "nav-btn"} onClick={onClick} title={title ? title : ""}>
+        <button className={className ? "nav-btn " + className : "nav-btn"} onClick={onClick} >
             <Icon icon={icon}></Icon>
         </button>
     );
@@ -60,7 +60,7 @@ export function NavMobileMenu({ navOpen, toggleNav }: { navOpen: boolean, toggle
                 <div className="nav-menu-header">
                     <h3 className="nav-menu-title">菜单</h3>
                     <button className="nav-menu-close-btn" onClick={toggleNav} >
-                        <Icon icon="fa6-solid:xmark" />
+                        <Icon icon="fa7-solid:xmark" />
                     </button>
                 </div>
                 <div className="nav-menu-content">

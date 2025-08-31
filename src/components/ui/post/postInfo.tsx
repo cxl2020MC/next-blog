@@ -8,17 +8,17 @@ export function PostInfo({Article} : {Article: Article}) {
     return (
         <div className="post-infos">
             <span className="post-info">
-                <Icon icon="fa6-solid:calendar"></Icon>
+                <Icon icon="fa7-solid:calendar"></Icon>
                 创建于: {formatUnix(Article.created_at)}
             </span>
             <span>|</span>
             <span className="post-info">
-                <Icon icon="fa6-solid:clock"></Icon>
+                <Icon icon="fa7-solid:clock"></Icon>
                 更新于: {formatUnix(Article.updated_at)}
             </span>
             <span>|</span>
             <span className="post-info">
-                <Icon icon="fa6-solid:file-word" />
+                <Icon icon="fa7-solid:file-word" />
                 字数: {Article.word_count}
             </span>
         </div>
