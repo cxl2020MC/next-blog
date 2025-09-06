@@ -2,7 +2,7 @@ import Script from "next/script"
 
 export default function LazyLoadCSS() {
     return (
-            <Script>
+            <Script id="lazy-load-css" >
                 {`(function () { 
                 const css = document.createElement('link');
                 css.rel = 'stylesheet';
