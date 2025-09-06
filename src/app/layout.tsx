@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./css/globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import LazyLoadCSS from "@/components/ui/lazyloadCSS";
 import ReducedMotion from "@/components/ui/reducedMotion";
 
 import blogConfig from "@/blog.config";
@@ -38,7 +39,7 @@ export default function RootLayout({
         <html lang="zh-CN" data-theme="light">
             <head>
                 {/* <link rel="icon" href={blogConfig.favicon} sizes="any" /> */}
-                <link rel="stylesheet" href="https://cxl2020mc-1304820025.file.myqcloud.com/fonts/Mi_Sans/MiSans%20VF/result.css" />
+                {/* <link rel="stylesheet" href="https://cxl2020mc-1304820025.file.myqcloud.com/fonts/Mi_Sans/MiSans%20VF/result.css" /> */}
             </head>
             <body>
                 <NextTopLoader />
@@ -51,6 +52,7 @@ export default function RootLayout({
 
                 {/* 页脚 */}
                 <Footer />
+                <LazyLoadCSS />
                 <Toaster richColors closeButton position="top-right" theme="system" />
                 <ReducedMotion />
                 <SpeedInsights />
