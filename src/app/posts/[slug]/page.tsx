@@ -30,6 +30,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = await get_post_data(slug)
 
   const metadata: Metadata = {
+    alternates: {
+        canonical: `/posts/${slug}`
+    },
     title: post.data.title,
     description: post.data.description,
   }

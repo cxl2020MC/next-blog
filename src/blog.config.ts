@@ -5,7 +5,7 @@ const blogConfig = {
   api: "https://api.blog.cxl2020mc.top",
   title: "陈鑫磊的博客",
   description: "一个记录我学习和思考的博客",
-  keywords: ["陈鑫磊", "博客", "前端", "后端", "全栈", "技术"],
+  keywords: ["陈鑫磊的博客", "陈鑫磊", "博客", "前端", "后端", "全栈", "技术"],
   favicon: "https://cxl2020mc-1304820025.file.myqcloud.com/avatar-round.webp",
   author: {
     avatar: "https://cxl2020mc-1304820025.file.myqcloud.com/avatar.png",
