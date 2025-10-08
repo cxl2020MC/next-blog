@@ -1,6 +1,7 @@
 // import type { BlogConfig } from './types/blog.config'
 
 const blogConfig = {
+  blogSiteUrl: "https://blog.cxl2020mc.top",
   api: "https://api.blog.cxl2020mc.top",
   title: "陈鑫磊的博客",
   description: "一个记录我学习和思考的博客",

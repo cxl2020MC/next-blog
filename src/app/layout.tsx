@@ -15,6 +15,7 @@ import { Analytics } from '@vercel/analytics/next';
 
 
 export const metadata: Metadata = {
+    metadataBase: new URL(blogConfig.blogSiteUrl),
     title: {
         template: `%s | ${blogConfig.title}`,
         default: blogConfig.title
