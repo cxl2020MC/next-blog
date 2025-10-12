@@ -21,6 +21,9 @@
     "nextjs-toploader": "^3.9.17",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-slug": "^6.0.0",
+    "remark-flexible-toc": "^1.2.3",
     "shiki": "^2.5.0",
     "sonner": "^2.0.7",
     "twikoo": "^1.6.44"

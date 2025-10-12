@@ -12,7 +12,12 @@ import Pre from "@/components/markdown/pre";
 import "@/app/css/posts.css";
 import "@/app/css/markdown.css";
 
-import { MDXRemote } from 'next-mdx-remote-client/rsc'
+// import { MDXRemote, type MDXRemoteOptions } from 'next-mdx-remote-client/rsc'
+import { evaluate, type EvaluateOptions } from "next-mdx-remote-client/rsc";
+
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import remarkFlexibleToc, { type TocItem } from "remark-flexible-toc";
 
 
 async function get_post_data(slug: string) {
@@ -31,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const metadata: Metadata = {
     alternates: {
-        canonical: `/posts/${slug}`
+      canonical: `/posts/${slug}`
     },
     title: post.data.title,
     description: post.data.description,
@@ -39,6 +44,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   console.debug(`设置文章元数据为:`)
   console.debug(metadata)
   return metadata
+}
+
+type Scope = {
+  toc: TocItem[]
 }
 
 export default async function PostPage(props: { params: Promise<{ slug: string }> }) {
@@ -51,6 +60,37 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
   const md_content = post.data.md_content;
   console.debug(md_content)
 
+
+  const options: EvaluateOptions = {
+    mdxOptions: {
+      remarkPlugins: [
+        remarkFlexibleToc
+      ],
+      rehypePlugins: [
+        rehypeSlug,
+        rehypeAutolinkHeadings,
+      ]
+    },
+    vfileDataIntoScope: "toc",
+  }
+
+  const components = {
+    pre: Pre
+  }
+
+  const { content, scope, error } = await evaluate<Scope>({
+    source: md_content,
+    options,
+    components,
+  });
+
+  console.debug(scope)
+
+  if (error) {
+    console.error(error)
+    return <div>加载失败</div>
+  }
+
   return (
     <>
       <main>
@@ -62,16 +102,11 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
           </div>
         </div>
         <div className="posts card markdown">
-          <MDXRemote source={md_content}
-            components={{
-              pre: Pre
-            }}
-          />
+          {content}
         </div>
         <div className="comment card mobile-card">
           <Comment />
         </div>
-
       </main>
       <Aside />
     </>
