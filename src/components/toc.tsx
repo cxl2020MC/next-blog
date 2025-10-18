@@ -5,9 +5,9 @@ export default function TableOfContents(toc: TocItem[]) {
   return (
     <div className="toc">
       <ul>
-        {toc.map((item: any) => (
-          <li key={item.id}>
-            <a href={`#${item.id}`} style={{textIndent: `${item.depth - 1}em`}}>{item.text}</a>
+        {toc.map((item: TocItem) => (
+          <li key={item.href}>
+            <a href={item.href} style={{textIndent: `${item.depth - 1}em`}}>{item.value}</a>
           </li>
         ))}
       </ul>

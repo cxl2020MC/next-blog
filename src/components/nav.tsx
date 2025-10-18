@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import blogConfig from "@/blog.config";
 import "./css/nav.css";
-import { title } from "process";
 
 
 // export const MobileMenuContext = createContext({ navOpen: false, toggleNav: () => { } });
