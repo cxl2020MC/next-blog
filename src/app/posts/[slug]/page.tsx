@@ -4,7 +4,8 @@ import Image from "next/image"
 
 import blogConfig from "@/blog.config";
 
-import Aside from "@/components/aside/aside";
+import Aside from "@/components/ui/aside/aside";
+import TableOfContents from "@/components/ui/aside/toc";
 import Comment from "@/components/comment";
 
 import Pre from "@/components/markdown/pre";
@@ -108,7 +109,9 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
           <Comment />
         </div>
       </main>
-      <Aside />
+      <Aside>
+        <TableOfContents toc={scope.toc as TocItem[]} />
+      </Aside>
     </>
   )
 }

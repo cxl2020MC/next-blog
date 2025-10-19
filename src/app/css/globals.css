@@ -139,6 +139,10 @@ a {
     border: var(--card-border-hover);
 }
 
+.card .card-title {
+    margin: 0;
+}
+
 @media (max-width: 50em) {
     .card.mobile-card {
         background: inherit;
