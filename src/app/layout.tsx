@@ -10,8 +10,9 @@ import blogConfig from "@/blog.config";
 import NextTopLoader from 'nextjs-toploader';
 import { Toaster } from 'sonner';
 
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 
 export const metadata: Metadata = {
@@ -59,8 +60,8 @@ export default function RootLayout({
                 <LazyLoadCSS />
                 <Toaster richColors closeButton position="top-right" theme="system" />
                 <ReducedMotion />
-                <SpeedInsights />
                 <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     );

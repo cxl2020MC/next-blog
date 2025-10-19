@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         canonical: "/links"
     },
     title: '友情链接',
-    description: '友链',
+    description: '友情链接',
 }
 
 export default async function LinkPage(){
