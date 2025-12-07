@@ -144,7 +144,7 @@ nav .nav-btns .nav-btn:hover {
 .nav-mobile-menu.open .nav-menu-container {
     backdrop-filter: var(--blur-filter);
     transform: translateX(0);
-    /* animation: nav-mobile-menu-container-open var(--animation-time) ease-in-out forwards; */
+    animation: nav-mobile-menu-container-open var(--animation-time) ease-in-out forwards;
 }
 
 
