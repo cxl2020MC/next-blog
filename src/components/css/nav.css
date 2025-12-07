@@ -110,6 +110,9 @@ nav .nav-btns .nav-btn:hover {
     background: transparent;
 
     transition: var(--animation-time) allow-discrete;
+    @starting-style {
+        background: transparent;
+    }
 }
 
 .nav-mobile-menu .nav-menu-container {
