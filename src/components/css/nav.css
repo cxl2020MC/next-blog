@@ -119,6 +119,9 @@ nav .nav-btns .nav-btn:hover {
 
     transform: translateX(100%);
     transition: var(--animation-time) allow-discrete;
+    @starting-style {
+        transform: translateX(100%);
+    }
 
     position: absolute;
     top: 0;
@@ -141,15 +144,6 @@ nav .nav-btns .nav-btn:hover {
     /* animation: nav-mobile-menu-container-open var(--animation-time) ease-in-out forwards; */
 }
 
-/* @keyframes nav-mobile-menu-mask-open {
-    0% {
-        background: transparent;
-    }
-
-    100% {
-        background: var(--blur-bg);
-    }
-} */
 
 @keyframes nav-mobile-menu-container-open {
     0% {
