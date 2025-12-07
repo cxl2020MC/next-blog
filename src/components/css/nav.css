@@ -107,7 +107,9 @@ nav .nav-btns .nav-btn:hover {
     width: 100vw;
     width: 100dvw;
     z-index: 9999;
-    transition: .3s allow-discrete;
+    background: transparent;
+
+    transition: var(--animation-time) allow-discrete;
 }
 
 .nav-mobile-menu .nav-menu-container {
@@ -123,20 +125,18 @@ nav .nav-btns .nav-btn:hover {
     border-radius: var(--card-border-radius) 0 0 var(--card-border-radius);
 }
 
-@media (max-width: 40em) {
-    .nav-mobile-menu.open {
-        display: block;
-        /* background: var(--blur-bg); */
-        animation: nav-mobile-menu-mask-open var(--animation-time) ease-in-out forwards;
-    }
-
-    .nav-mobile-menu.open .nav-menu-container {
-        backdrop-filter: var(--blur-filter);
-        animation: nav-mobile-menu-container-open var(--animation-time) ease-in-out forwards;
-    }
+.nav-mobile-menu.open {
+    display: block;
+    background: var(--blur-bg);
+    /* animation: nav-mobile-menu-mask-open var(--animation-time) ease-in-out forwards; */
 }
 
-@keyframes nav-mobile-menu-mask-open {
+.nav-mobile-menu.open .nav-menu-container {
+    backdrop-filter: var(--blur-filter);
+    animation: nav-mobile-menu-container-open var(--animation-time) ease-in-out forwards;
+}
+
+/* @keyframes nav-mobile-menu-mask-open {
     0% {
         background: transparent;
     }
@@ -144,7 +144,7 @@ nav .nav-btns .nav-btn:hover {
     100% {
         background: var(--blur-bg);
     }
-}
+} */
 
 @keyframes nav-mobile-menu-container-open {
     0% {
