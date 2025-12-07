@@ -118,7 +118,7 @@ nav .nav-btns .nav-btn:hover {
     max-width: 80%;
 
     transform: translateX(100%);
-    transition: var(--animation-time);
+    transition: var(--animation-time) allow-discrete;
 
     position: absolute;
     top: 0;
