@@ -118,7 +118,7 @@ nav .nav-btns .nav-btn:hover {
     max-width: 80%;
 
     transform: translateX(100%);
-    transition: var(--animation-time) allow-discrete;
+    transition: var(--animation-time);
 
     position: absolute;
     top: 0;
@@ -138,13 +138,12 @@ nav .nav-btns .nav-btn:hover {
 .nav-mobile-menu.open {
     display: block;
     background: var(--blur-bg);
-    /* animation: nav-mobile-menu-mask-open var(--animation-time) ease-in-out forwards; */
 }
 
 .nav-mobile-menu.open .nav-menu-container {
     backdrop-filter: var(--blur-filter);
     transform: translateX(0);
-    animation: nav-mobile-menu-container-open var(--animation-time) ease-in-out forwards;
+    /* animation: nav-mobile-menu-container-open var(--animation-time) ease-in-out forwards; */
 }
 
 
