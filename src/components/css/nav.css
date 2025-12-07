@@ -107,6 +107,7 @@ nav .nav-btns .nav-btn:hover {
     width: 100vw;
     width: 100dvw;
     z-index: 9999;
+    transition: .3s allow-discrete;
 }
 
 .nav-mobile-menu .nav-menu-container {
