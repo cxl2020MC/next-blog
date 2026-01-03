@@ -166,7 +166,7 @@ a {
     /* 移动端 */
     @media (max-width: 50em) {
         flex-direction: column;
-    };
+    }
     /* 宽屏PC端 */
     @media (min-width: 50em) {
         justify-content: center;
