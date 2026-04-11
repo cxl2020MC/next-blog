@@ -1,12 +1,18 @@
-import { defineConfig } from "eslint/config";
-import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
-import nextTypescript from "eslint-config-next/typescript";
-// import path from "node:path";
-// import { fileURLToPath } from "node:url";
-
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
-
-export default defineConfig([{
-    extends: [...nextCoreWebVitals, ...nextTypescript],
-}]);
+import { defineConfig, globalIgnores } from 'eslint/config'
+import nextVitals from 'eslint-config-next/core-web-vitals'
+import nextTs from 'eslint-config-next/typescript'
+ 
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  // 覆盖 eslint-config-next 的默认忽略项。
+  globalIgnores([
+    // eslint-config-next 的默认忽略项：
+    '.next/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts',
+  ]),
+])
+ 
+export default eslintConfig
