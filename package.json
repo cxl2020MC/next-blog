@@ -12,37 +12,29 @@
     "@iconify/react": "^6.0.2",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
-    "@types/mdx": "^2.0.13",
+    "@types/mdx": "^2.0.14",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "dayjs": "^1.11.20",
-    "next": "^16.2.6",
-    "next-mdx-remote-client": "^2.1.10",
+    "dayjs": "^1.11.21",
+    "next": "^16.2.10",
+    "next-mdx-remote-client": "^2.1.11",
     "nextjs-toploader": "^3.9.17",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0",
-    "remark-flexible-toc": "^1.2.5",
-    "shiki": "^4.1.0",
+    "remark-flexible-toc": "^1.2.6",
+    "shiki": "^4.3.1",
     "sonner": "^2.0.7",
-    "twikoo": "^1.7.9"
+    "twikoo": "^1.7.14"
   },
   "devDependencies": {
-    "@types/node": "^25.9.1",
-    "@types/react": "^19.2.15",
+    "@types/node": "^25.9.5",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
-    "eslint-config-next": "^16.2.6",
+    "eslint-config-next": "^16.2.10",
     "typescript": "^5.9.3"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "@vercel/speed-insights",
-      "sharp",
-      "unrs-resolver"
-    ]
-  },
-  "packageManager": "pnpm@10.33.4+sha512.1c67b3b359b2d408119ba1ed289f34b8fc3c6873412bec6fd264fbdc82489e510fcbecb9ce9d22dae7f3b76269d8441046014bdca53b9979cd7a561ad631b800"
+  "packageManager": "pnpm@11.11.0+sha512.4463f65fd80ed80d69bc1d4bf163ee94f605c7380fc318bb5b2ebe15f8cd12d49c51a4d59e951b401e764d3b6ca751cbf51bc50ed7001a6bcb4935e684c34882"
 }
