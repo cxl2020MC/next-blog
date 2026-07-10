@@ -41,7 +41,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="zh-CN" data-theme="light" data-scroll-behavior="smooth">
+        <html lang="zh-CN" data-theme="light">
             <head>
                 {/* <link rel="icon" href={blogConfig.favicon} sizes="any" /> */}
                 {/* <link rel="stylesheet" href="https://cxl2020mc-1304820025.file.myqcloud.com/fonts/Mi_Sans/MiSans%20VF/result.css" /> */}
