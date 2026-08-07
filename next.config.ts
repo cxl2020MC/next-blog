@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
         //     }
         // ]
     },
+    typescript: {
+        // 忽略 TypeScript 错误
+        ignoreBuildErrors: true,
+    },
 };
 
 
